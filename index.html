@@ -16,11 +16,12 @@
           <i class="menu-toggle-btn fas fa-bars"></i>
           <nav class="navigation-menu">
             <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
-            <a href="index.html"><i class="fas fa-home home"></i> Home</a>
-            <a href="about.html"><i class="fas fa-align-left about"></i> About</a>
-            <a href="gallery.html"><i class="fab fa-buffer works"></i> gallery</a>
+            <div class="float-right">
+            <a class="scale1" href="index.html"> Home</a>
+            <a class="scale1" href="about.html"> About</a>
+            <a class="scale1" href="gallery.html"> gallery</a>
             <div class="dropdown">
-              <button class="dropbtn" ><i class="fas fa-users team"></i> SERVICES</button>
+              <button class="dropbtn" style="font-size: 14px; font-weight: bold; color: #f1f1f1;"> SERVICES</button>
               <div class="dropdown-content">
                 <a href="model photography.html">model photography</a>
                 <a href="wedding.html">wedding</a>
@@ -28,14 +29,15 @@
                 <a href="post-wedding.html">post-wedding</a>
               </div>
             </div>
-            <a href="contact.html"><i class="fas fa-headset contact"></i> Contact</a>
+            <a class="scale1" href="contact.html"> Contact</a>
+            </div>
           </nav>
         </div>
       </header>
       <div class="full-screen">
         <video src="images/video_663457994167091.mp4" autoplay muted loop></video>
        
-        <div class="content"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="content"><br><br><br>
           <img src="images/logo.png" alt=""><br><br>
           <a href="https://najukstudio.com/wedding-films">watch more</a>
       </div>
@@ -79,31 +81,55 @@
 
 </div>
   
-    <footer>
-      <div class="footer-container">
-        <div class="left-col">
-          <img src="images/logo.png" alt="" class="logo">
-          <div class="social-media"><br><br><br><br><br>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+<footer class="footer-area">
+  <div class="footer-wave-box">
+      <div class="footer-wave footer-animation"></div>
+  </div>
+  <div class="main">
+      <div class="footer">
+          <div class="single-footer">
+              <img src="images/logo.png" style="width: 200px;" alt="">
+              <div class="footer-social">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-linkedin-in"></i></a>
+              </div>
           </div>
-          <p class="rights-text">&copy; 2021 All Rights Reserved.</p>
-        </div>
-
-        <div class="right-col">
-          <h1>Our blogs</h1>
-          <div class="border"></div><br><br>
-          <p>Enter Your Email to get our news and updates.</p><br><br>
-          <form action="" class="newsletter-form">
-            <input type="text" class="txtb" placeholder="Enter Your Email">
-            <input type="submit" class="btn" value="submit">
-          </form>
-        </div>
+          <div class="single-footer">
+              <h4>Menu</h4>
+              <ul>
+                  <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                  <li><a href="#"><i class="fas fa-chevron-right"></i> About</a></li>
+                  <li><a href="#"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                  <li><a href="#"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                  <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+              </ul>
+          </div>
+          <div class="single-footer">
+              <h4>Quick Links</h4>
+              <ul>
+                  <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                  <li><a href="#"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
+                  <li><a href="#"><i class="fas fa-chevron-right"></i> Disclaimer</a></li>
+              </ul>
+          </div>
+          <div class="single-footer">
+              <h4>Contact Information</h4>
+              <ul>
+                  <li><a href="#"><i class="fas fa-map-marker-alt"></i> New York, United States</a></li>
+                  <li><a href="tel:+1-2353-4352-555"><i class="fas fa-mobile-alt"></i> +1-2353-4352-555</a></li>
+                  <li><a href="#"><i class="fas fa-envelope"></i> founder@ladlifoundation.com</a></li>
+                  <li><a href="#"><i class="fas fa-globe"></i> ladlifoundation.com</a></li>
+              </ul>
+          </div>
       </div>
-    </footer>
+      <div class="copy">
+          <p>&copy; 2021 All Rights Reserved</p>
+      </div>
+  </div>
+</footer>
+
       <script type="text/javascript">
         $(".menu-toggle-btn").click(function(){
           $(this).toggleClass("fa-times");
