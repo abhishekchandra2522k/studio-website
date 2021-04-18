@@ -335,7 +335,8 @@ body {
 
 .testimonial {
     display: grid;
-
+    padding: 100px 100px;
+    /* margin-right: 100px; */
 }
 
 .reviews {
@@ -518,11 +519,7 @@ footer p {
     margin-top: 100px;
     padding-top: 50px;
     padding-bottom: 20px;
-    background: rgb(115,136,10);
-    background: -moz-linear-gradient(left,  rgba(115,136,10,1) 0%, rgba(158,175,68,1) 100%);
-    background: -webkit-linear-gradient(left,  rgba(115,136,10,1) 0%,rgba(158,175,68,1) 100%);
-    background: linear-gradient(to right,  rgba(115,136,10,1) 0%,rgba(158,175,68,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73880a', endColorstr='#9eaf44',GradientType=1 );
+    background: rgb(0,0,0);
     position: relative;
   }
   
@@ -544,7 +541,7 @@ footer p {
   .single-footer img{
     width: 200px;
     margin-bottom: 36px;
-    margin-left: 20px;
+    margin-left: 68px;
   }
   
   .single-footer:first-child{
@@ -555,20 +552,23 @@ footer p {
     text-transform: capitalize;
     font-size: 22px;
     margin-bottom: 20px;
+    color: #fff;
+    margin-left: 10px;
   }
   
   .single-footer h4:first-child{
     font-weight: 600;
-    margin-left: 20px;
+    /* margin-left: 20px; */
   }
   
   .footer-social{
     margin-top: 20px;
+    margin-left: 25px;
   }
   
   .footer-social a{
-    color: rgb(255, 0, 43);
-    border: 1px solid rgb(255, 0, 43);
+    color: black;
+    border: 1px solid #000;
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -576,7 +576,11 @@ footer p {
     line-height: 40px;
     border-radius: 50%;
     margin-right: 10px;
-    margin-left: 5px;
+    margin-left: 10px;
+  }
+
+  .footer-social i{
+      color: antiquewhite;
   }
   
   .footer-social a:hover{
@@ -596,7 +600,7 @@ footer p {
   }
   
   .single-footer ul li a{
-    color: #6e4c1eff;
+    color: #fff;
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
