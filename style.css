@@ -175,9 +175,6 @@ body {
     width: 100%;
     padding-top: 90px;
 }
-#services>*{
-    flex: 1 1 160px;
-}
 .serviceBox {
     display: flex;
     flex-wrap: wrap;
@@ -187,8 +184,7 @@ body {
     margin-bottom: 0;
     min-width: 370px;
     height: 370px;
-    flex: 1 1 1;
-
+    flex-basis: 31%;
 }
 
 .serviceLabel a {
@@ -205,34 +201,76 @@ body {
 
 
 #serviceOne {
-    background: url("imgs/engagement.jpeg") center;
-    background-size: 400%;
+    background: url("imgs/4.jpg") center;
+    background-size: 200%;
     transition: background-size 600ms ease-out;
 }
 
 
 #serviceTwo {
-    background: url("imgs/flowers.jpeg") center;
-    background-size: 200%;
+    background: url("imgs/12.jpg") center;
+    background-size: 150%;
     transition: background-size 600ms ease-out;
 }
 
 #serviceThree {
-    background: url("imgs/portrait.jpeg") center;
+    background: url("imgs/13.jpg") center;
     background-size: 160%;
     transition: background-size 600ms ease-out;
 }
 
 #serviceOne:hover{
-    background-size: 500%;
+    background-size: 300%;
+    transition: 0.6s ease-in;
 }
 
 #serviceTwo:hover{
     background-size: 250%;
+    transition: 0.6s ease-in;
+
 }
 
 #serviceThree:hover {
     background-size: 210%;
+    transition: 0.6s ease-in;
+
+}
+
+#serviceFour {
+    background: url("imgs/16.jpg") center;
+    background-size: 100%;
+    transition: background-size 600ms ease-out;
+}
+
+
+#serviceFive {
+    background: url("imgs/11.jpg") center;
+    background-size: 200%;
+    transition: background-size 600ms ease-out;
+}
+
+#serviceSix {
+    background: url("imgs/1.jpg") center;
+    background-size: 160%;
+    transition: background-size 600ms ease-out;
+}
+
+#serviceFour:hover{
+    background-size: 150%;
+    transition: 0.6s ease-in;
+
+}
+
+#serviceFive:hover{
+    background-size: 250%;
+    transition: 0.6s ease-in;
+
+}
+
+#serviceSix:hover {
+    background-size: 210%;
+    transition: 0.6s ease-in;
+
 }
 
 .portfolio {
@@ -309,15 +347,15 @@ body {
 
 .parallaxOne {
     background: url("imgs/reviews.jpg") center;
-    height: 100vh;
+    height: 90vh;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
 .parallaxTwo {
-    background: url("imgs/1.jpg") center;
-    height: 100vh;
+    background: url("imgs/5.jpg") center;
+    height: 50vh;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -579,7 +617,7 @@ footer p {
 } */
 
 .footer-area{
-    margin-top: 100px;
+    /* margin-top: 100px; */
     padding-top: 50px;
     padding-bottom: 20px;
     background: rgb(0,0,0);
