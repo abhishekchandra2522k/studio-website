@@ -137,8 +137,8 @@ nav li {
 }
 
 .scrolledHeader {
-    position: fixed;
-    background-color: #000;
+    position: relative;
+    background-color: transparent;
     height: 60px;
     width: 100%;
     z-index: 999;
@@ -518,11 +518,11 @@ footer p {
     margin-top: 100px;
     padding-top: 50px;
     padding-bottom: 20px;
-    background: rgb(255,209,84);
-    background: -moz-linear-gradient(left,  rgba(255,209,84,1) 0%, rgba(73,248,255,1) 100%);
-    background: -webkit-linear-gradient(left,  rgba(255,209,84,1) 0%,rgba(73,248,255,1) 100%);
-    background: linear-gradient(to right,  rgba(255,209,84,1) 0%,rgba(73,248,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd154', endColorstr='#49f8ff',GradientType=1 );  
+    background: rgb(115,136,10);
+    background: -moz-linear-gradient(left,  rgba(115,136,10,1) 0%, rgba(158,175,68,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(115,136,10,1) 0%,rgba(158,175,68,1) 100%);
+    background: linear-gradient(to right,  rgba(115,136,10,1) 0%,rgba(158,175,68,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73880a', endColorstr='#9eaf44',GradientType=1 );
     position: relative;
   }
   
@@ -559,6 +559,7 @@ footer p {
   
   .single-footer h4:first-child{
     font-weight: 600;
+    margin-left: 20px;
   }
   
   .footer-social{
@@ -602,7 +603,7 @@ footer p {
   }
   
   .single-footer ul li a:hover{
-    color: chocolate;
+    color: whitesmoke;
     transition: 0.6s ease;
   }
   
