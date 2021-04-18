@@ -180,7 +180,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 15px;
+    margin: 1px;
     margin-bottom: 0;
     min-width: 370px;
     height: 370px;
@@ -202,73 +202,73 @@ body {
 
 #serviceOne {
     background: url("imgs/4.jpg") center;
-    background-size: 200%;
+    background-size: 100%;
     transition: background-size 600ms ease-out;
 }
 
 
 #serviceTwo {
     background: url("imgs/12.jpg") center;
-    background-size: 150%;
+    background-size: 131%;
     transition: background-size 600ms ease-out;
 }
 
 #serviceThree {
     background: url("imgs/13.jpg") center;
-    background-size: 160%;
+    background-size: 100%;
     transition: background-size 600ms ease-out;
 }
 
 #serviceOne:hover{
-    background-size: 300%;
+    background-size: 150%;
     transition: 0.6s ease-in;
 }
 
 #serviceTwo:hover{
-    background-size: 250%;
+    background-size: 150%;
     transition: 0.6s ease-in;
 
 }
 
 #serviceThree:hover {
-    background-size: 210%;
+    background-size: 150%;
     transition: 0.6s ease-in;
 
 }
 
 #serviceFour {
     background: url("imgs/16.jpg") center;
-    background-size: 100%;
+    background-size: 80%;
     transition: background-size 600ms ease-out;
 }
 
 
 #serviceFive {
     background: url("imgs/11.jpg") center;
-    background-size: 200%;
+    background-size: 131%;
     transition: background-size 600ms ease-out;
 }
 
 #serviceSix {
     background: url("imgs/1.jpg") center;
-    background-size: 160%;
+    background-size: 131%;
     transition: background-size 600ms ease-out;
 }
 
 #serviceFour:hover{
-    background-size: 150%;
+    background-size: 100%;
     transition: 0.6s ease-in;
 
 }
 
 #serviceFive:hover{
-    background-size: 250%;
+    background-size: 170%;
     transition: 0.6s ease-in;
 
 }
 
 #serviceSix:hover {
-    background-size: 210%;
+    background-size: 150%;
     transition: 0.6s ease-in;
 
 }
@@ -664,7 +664,7 @@ footer p {
   
   .footer-social{
     margin-top: 20px;
-    margin-left: 25px;
+    margin-left: 95px;
   }
   
   .footer-social a{
