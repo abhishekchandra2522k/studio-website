@@ -286,7 +286,7 @@ body {
     grid-template-rows: repeat(4, 7vw);
     grid-gap: 15px;
     width: 100%;
-    padding: 0 200px;
+    padding: 0 373px;
     /* justify-content: center; */
 }
 
@@ -838,6 +838,14 @@ footer p {
     .single-footer:first-child, .single-footer {
         width: 100%;
         margin-bottom:30px;
+    }
+    .gallery-home{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 12vw);
+        grid-gap: 15px;
+        width: 100%;
+        padding: 0 30px;
     }
     }
 
