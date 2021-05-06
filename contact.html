@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Najuk Studios | Contact</title>
+    <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/png/128/344/344983.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gstyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <style>
+        input[type=text], input[type=number], input[type=email], input[type=date], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        .container_form {
+          border-radius: 5px;
+          background-color: #ffffff;
+          padding: 20px;
+        }
+        </style>
+    
+</head>
+
+<header>
+
+    <div class="header">
+        <input type="checkbox" id="toggleMenu" hidden>
+        <label for="toggleMenu">
+            Menu
+        </label>
+        <img src="imgs/logo.png" alt="" width="200px" style="margin-top: 20px;">
+        <nav>
+
+            <div class="fullMenu menu">
+                <ul>            
+                    <li><a href="/">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="gallery.html">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="menu" id="collMenu">
+                <ul>            
+                    <li><a href="/">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="gallery.html">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+</header>
+<body>
+    <br><br>
+    <h1 style="text-align: center;">Contact Us</h1>
+    <br><br>
+    
+    <div class="container_form">
+        <form action="/action_page.php">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="Name" placeholder="Name.." required>
+      
+          <label for="lname">Email</label>
+          <input type="email" id="lname" name="Email" placeholder="Email" required>
+            
+          <label for="number">Contact Number</label>
+          <input type="number" name="number" id="number" placeholder="+91 XXXX XXX XXX" required>
+          <!-- <label for="country">Country</label>
+          <select id="country" name="country" required>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select> -->
+          <label for="date">Date of Wedding</label>
+          <input type="date" name="date" required>
+          <label for="subject">Tell us about your wedding plan</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+          
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+        
+    <footer class="footer-area">
+        <div class="footer-wave-box">
+            <div class="footer-wave footer-animation"></div>
+        </div>
+        <div class="main">
+            <div class="footer">
+                <div class="single-footer">
+                    <img src="imgs/logo.png" alt="">
+                    </p>
+                    <div class="footer-social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="single-footer">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="single-footer">
+                    <h4>Contact Information</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan</a></li>
+                        <li><a href="tel:+9100000000"><i class="fas fa-mobile-alt"></i> +9100000000</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> abc@xyc.com</a></li>
+                        <li><a href="#"><i class="fas fa-globe"></i> xyz.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                <p>&copy; 2021 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
