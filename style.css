@@ -63,7 +63,9 @@ header {
 
 }
 
-
+.header img{
+    margin: 3rem;
+}
 
 .header {
     display: flex;
@@ -798,6 +800,11 @@ footer p {
     font-weight: bold;
   }
   
+  .single-footer ul li:hover{
+      padding-left: 1.5rem;
+      transition: .5s all;
+  }
+
   .single-footer ul li a:hover{
     color: whitesmoke;
     transition: 0.6s ease;
@@ -843,11 +850,12 @@ footer p {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(4, 12vw);
-        grid-gap: 15px;
+        grid-gap: 9px;
         width: 100%;
         padding: 0 30px;
     }
     }
+
 
 .title {
     display: block;
@@ -944,6 +952,9 @@ footer p {
         text-align: center;
         width: 100%;
     }
+    .header img{
+        margin: 6rem;
+    }
 
     .fullMenu {
         display: none;
@@ -951,6 +962,7 @@ footer p {
 
     nav {
         width: 100%;
+        margin-top: -6rem;
     }
 
     .scrolledHeader nav {
@@ -1036,9 +1048,21 @@ footer p {
     }
 
     .parallaxOne, .parallaxTwo {
-        display: none;
+        object-fit: cover;
+        width: 100%;
     }
 
 
 
+}
+
+@media screen and (min-width: 1441px){
+    .gallery-home{
+        padding: 0 32rem;
+    }
+}
+@media screen and (min-width: 2000px){
+    .gallery-home{
+        padding: 0 42rem;
+    }
 }
