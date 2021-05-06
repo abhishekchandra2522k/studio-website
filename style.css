@@ -116,6 +116,46 @@ nav {
     
 }
 
+.fullMenu ul li a i{
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 50%;
+    color: white;
+    background: #000;
+    background: rgba( 255, 255, 255, 0.30 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.fullMenu ul li a i:hover{
+    background: rgba(255, 255, 255, 0.644);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: .5s;
+}
+
+.fullMenu ul li a i:nth-child(1):hover{
+    color: rgb(0, 125, 167);
+}
+
+.new_nav{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.social_right{
+    margin-left: auto;
+    order: 2;
+}
+
+
+
 nav a {
     text-decoration: none;
     text-transform: uppercase;
@@ -133,32 +173,6 @@ nav li {
 
 #collMenu, label[for='toggleMenu']{
     display: none;
-}
-
-.scrolledHeader {
-    position: relative;
-    background-color: transparent;
-    height: 60px;
-    width: 100%;
-    z-index: 999;
-    transition: .6s;
-}
-
-.scrolledHeader nav {
-    position: relative;
-    top: -20px;
-}
-
-.scrolledHeader h1 {
-    padding: 10px 50px;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-.scrolledHeader>h1>span {
-    letter-spacing: 2px;
-    font-size: 1.2em;
-    
 }
 
 .header>h1,
@@ -289,7 +303,6 @@ body {
     grid-gap: 15px;
     width: 100%;
     padding: 0 373px;
-    /* justify-content: center; */
 }
 
 .gallery__item--1 {
@@ -334,14 +347,6 @@ body {
     grid-row-end: 5;
 }
 
-/* .img-area{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-} */
-
 .single-img{
     padding: 0 20px 20px;
 }
@@ -353,7 +358,6 @@ body {
     margin-top: 10px;
     width: 100vw;
     display: grid;
-    /* grid-template-columns: repeat(3, 3fr); */
     grid-template-columns: repeat(3, 300px);
     column-gap: 10px;
     row-gap: 10px;
@@ -372,7 +376,6 @@ body {
     width: 95%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 15px 20px;
-    /* padding-bottom: 40px; */
     margin: 0 auto;
 
 }
@@ -409,7 +412,9 @@ body {
 
 }
 
-
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.w3-section,.w3-code{margin-top:16px!important;margin-bottom:16px!important}
+.w3-content,.w3-auto{margin-left:auto;margin-right:auto}.w3-content{max-width:980px}
 .blog {
     margin: 0 auto;
     width: 70%;
@@ -453,19 +458,6 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-/* 
-.testimonials {
-    display: block;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.testimonial {
-    display: grid;
-    padding: 100px 100px;
-    margin-right: 100px;
-} */
 
 #testimonials h2{
     color: #000;
@@ -488,8 +480,6 @@ body {
 #testimonials .container .testimonials-box{
     position: relative;
     z-index: 1;
-    /* max-width: 800px; */
-    /* min-height: 380px; */
     margin: 20rem auto 0 auto;
 }
 
@@ -514,7 +504,6 @@ body {
     font-size: 2.4rem;
     font-weight: 500;
     text-align: center;
-    /* padding-top: 10rem; */
     margin-bottom: 3rem;
     letter-spacing: 3px;
 }
@@ -526,7 +515,6 @@ body {
     width: 80%;
     margin: auto;
     text-align: center;
-    /* padding-bottom: 3.5rem; */
 }
 
 .owl-carousel.owl-drag .owl-item{
@@ -638,7 +626,6 @@ body {
 }
 
 .packagePrice p {
-    /* font-style: italic; */
     color: rgb(136, 136, 136);
 }
 
@@ -697,20 +684,7 @@ td:nth-last-child(1) {
 
 }
 
-/* footer {
-    background-color: #000;
-    height: 100px;
-    width: 100%;
-    text-align: center;
-}
-
-footer p {
-    position: relative;
-    top: 40px;
-} */
-
 .footer-area{
-    /* margin-top: 100px; */
     padding-top: 50px;
     padding-bottom: 20px;
     background: rgb(0,0,0);
@@ -752,7 +726,6 @@ footer p {
   
   .single-footer h4:first-child{
     font-weight: 600;
-    /* margin-left: 20px; */
   }
   
   .footer-social{
@@ -889,8 +862,28 @@ footer p {
 
 }
 
-@media only screen and (max-width: 1280px) {
-
+@media only screen and (min-width: 1000px) {
+    .new_nav{
+        display: block;
+        font-size: 10px;
+    }
+    .header{
+        /* display: block; */
+        flex-wrap: nowrap;
+    }
+    .center{
+        width: 55%;
+    }
+    .social_right{
+        width: 36%;
+    }
+    .fullMenu ul li{
+        padding: 10px;
+    } 
+    nav{
+        padding-right: 1rem;
+        padding-top: 1rem;
+    }
 }
 
 @media only screen and (max-width: 980px) {
@@ -965,11 +958,6 @@ footer p {
         margin-top: -6rem;
     }
 
-    .scrolledHeader nav {
-        top: 0px;
-        background-color: #000;
-    }
-
     #toggleMenu {
         position: absolute;
         top: 10px;
@@ -977,14 +965,11 @@ footer p {
 
     }
 
-    /* hide after you style */
-
     #collMenu {
         display: none;
         position: relative;
         top: 0px;
         width: 100%;
-        /* background-color: #000; */
         background-color: inherit;
         transition: 0.6s ease;
     }
@@ -1000,11 +985,6 @@ footer p {
     .reviews {
         display: block;  
     }
-
-    /* .testimonial {
-        margin: 60px 0;
-    } */
-
 }
 
 @media only screen and (max-width: 480px) {
@@ -1059,6 +1039,9 @@ footer p {
 @media screen and (min-width: 1441px){
     .gallery-home{
         padding: 0 32rem;
+    }
+    .center{
+        padding-left: 23rem;
     }
 }
 @media screen and (min-width: 2000px){

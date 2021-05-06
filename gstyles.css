@@ -565,7 +565,9 @@ footer p {
   
   .footer-social{
     margin-top: 20px;
-    margin-left: 25px;
+    text-align: center;
+    width: 80%;
+    margin-left: 0;
   }
   
   .footer-social a{
