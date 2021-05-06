@@ -7,16 +7,16 @@ document.addEventListener('DOMContentLoaded', function(event){
     
     console.log("loaded");
 
-    window.addEventListener('scroll', function(){
-        var navi = document.querySelector('.header');
+    // window.addEventListener('scroll', function(){
+    //     var navi = document.querySelector('.header');
 
-        if(this.window.scrollY > 0) {
-            navi.className += ' scrolledHeader';
-        } else {
-            console.log("reached top");
-            navi.classList.remove("scrolledHeader");
-        }
-    });
+    //     if(this.window.scrollY > 0) {
+    //         navi.className += ' scrolledHeader';
+    //     } else {
+    //         console.log("reached top");
+    //         navi.classList.remove("scrolledHeader");
+    //     }
+    // });
 
     for(i = 0; i < serviceBox.length; i++) {
         serviceBox[i].addEventListener('touchstart', function(){
@@ -37,3 +37,19 @@ document.addEventListener('DOMContentLoaded', function(event){
         
 
 });
+
+
+var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 9000);    
+        }
