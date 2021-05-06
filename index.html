@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Najuk Studios</title>
-    <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/png/128/344/344983.png" />
-    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
-    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="icon" type="image/png" href="imgs/icon.svg" />
+    <link rel="stylesheet" href="owl.carousel.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -32,11 +28,18 @@
         <nav>
 
             <div class="fullMenu menu">
-                <ul>            
-                    <li><a href="#">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="gallery.html">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="new_nav">
+                    <div class="center" style="float: left;">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </div>
+                    <div class="social_right" style="float: right;">
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    </div>
                 </ul>
             </div>
 
@@ -57,8 +60,6 @@
     <div class="container">
 
         <div class="title">
-            <h1 style="font-family: 'Dancing Script', cursive;">Your style of wedding</h1>
-            <h2>Professional photographers of Jaipur</h2>
             <p>Najuk Studios is an endeavor to capture all things beautiful. We are a passionate team of wedding photographers and cinematographers that loves to capture and preserve the most beautiful of emotions experienced around. We believe that weddings are a path defining phase of an individual’s life; the flood of emotions and beautiful memories that a wedding creates is rare, truly overwhelming and heart warming. Hence, weddings serve as a perfect platform for us to satiate our creative juices and allow us a cathartic experience.</p>
         </div>
 
@@ -122,8 +123,11 @@
             <h1 style="font-family: 'Dancing Script', cursive;">Signature</h1>
         </div>
 
-        <div class="blog" id="blog">
-            <img src="imgs/6.JPG" alt="">
+        <div class="blog w3-section" id="blog">
+            <img class="mySlides w3-animate-fading" src="imgs/6.JPG" alt="">
+            <img class="mySlides w3-animate-fading" src="imgs/6.JPG" alt="">
+            <img class="mySlides w3-animate-fading" src="imgs/6.JPG" alt="">
+            <img class="mySlides w3-animate-fading" src="imgs/6.JPG" alt="">
         </div>
 
         <section class="gallery-home">
@@ -203,25 +207,16 @@
                       <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
                       <li><a href="#"><i class="fas fa-chevron-right"></i> About</a></li>
                       <li><a href="#"><i class="fas fa-chevron-right"></i> Gallery</a></li>
-                      <li><a href="#"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                      <li><a href="#"><i class="fas fa-chevron-right"></i> Services</a></li>
                       <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
                   </ul>
               </div>
-              <!-- <div class="single-footer">
-                  <h4>Quick Links</h4>
-                  <ul>
-                      <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
-                      <li><a href="#"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
-                      <li><a href="#"><i class="fas fa-chevron-right"></i> Disclaimer</a></li>
-                  </ul>
-              </div> -->
               <div class="single-footer">
                   <h4>Contact Information</h4>
                   <ul>
-                      <li><a href="#"><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan</a></li>
-                      <li><a href="tel:+9100000000"><i class="fas fa-mobile-alt"></i> +9100000000</a></li>
-                      <li><a href="#"><i class="fas fa-envelope"></i> abc@xyc.com</a></li>
-                      <li><a href="#"><i class="fas fa-globe"></i> xyz.com</a></li>
+                      <li><a href="#"><i class="fas fa-map-marker-alt"></i>Raja Park, Jaipur, Raj - 302004</a></li>
+                      <li><a href="tel:+91-97829-11284"><i class="fas fa-mobile-alt"></i>+91-97829-11284</a></li>
+                      <li><a href="mailto:nstudio.chinmay@gmail.com"><i class="fas fa-envelope"></i>nstudio.chinmay@gmail.com</a></li>
                   </ul>
               </div>
           </div>
@@ -233,9 +228,9 @@
 
     
     <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
-    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="owl.carousel.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
             loop: true,
