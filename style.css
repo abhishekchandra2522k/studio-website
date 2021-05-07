@@ -116,8 +116,12 @@ nav {
     
 }
 
+a img{ 
+    width: 25%;
+}
+
 .fullMenu ul li a i{
-    padding: 20px;
+    padding: 12px;
     font-size: 18px;
     border-radius: 50%;
     color: white;
@@ -879,6 +883,7 @@ td:nth-last-child(1) {
     }
     .fullMenu ul li{
         padding: 10px;
+        padding-left: 29px;
     } 
     nav{
         padding-right: 1rem;
@@ -1038,7 +1043,7 @@ td:nth-last-child(1) {
 
 @media screen and (min-width: 1441px){
     .gallery-home{
-        padding: 0 32rem;
+        padding: 4rem 32rem;
     }
     .center{
         padding-left: 23rem;

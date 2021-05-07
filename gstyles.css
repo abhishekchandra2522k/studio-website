@@ -1,16 +1,8 @@
-/***
-font-family: 'Raleway',
-sans-serif;
-***/
-
-@import url(http://weloveiconfonts.com/api/?family=typicons);
-
 *,
 html,
 body {
     margin: 0;
     box-sizing: border-box;
-    /* color: #3e454c; */
 }
 
 body {
@@ -66,7 +58,6 @@ header {
     background-size: cover;
     height: 40vh;
     /* transition-delay: 500ms; */
-
 }
 
 
@@ -245,9 +236,7 @@ body {
     width: 95%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 15px 20px;
-    /* padding-bottom: 40px; */
     margin: 0 auto;
-
 }
 
 .portfolio img {
@@ -338,7 +327,6 @@ body {
 .testimonial {
     display: grid;
     padding: 100px 100px;
-    /* margin-right: 100px; */
 }
 
 .reviews {
@@ -505,18 +493,6 @@ td:nth-last-child(1) {
 
 }
 
-/* footer {
-    background-color: #000;
-    height: 100px;
-    width: 100%;
-    text-align: center;
-}
-
-footer p {
-    position: relative;
-    top: 40px;
-} */
-
 .footer-area{
     margin-top: 100px;
     padding-top: 50px;
@@ -560,7 +536,6 @@ footer p {
   
   .single-footer h4:first-child{
     font-weight: 600;
-    /* margin-left: 20px; */
   }
   
   .footer-social{
@@ -776,7 +751,6 @@ footer p {
         position: relative;
         top: 0px;
         width: 100%;
-        /* background-color: #000; */
         background-color: inherit;
         transition: 0.6s ease;
     }
@@ -842,7 +816,4 @@ footer p {
     .parallaxOne, .parallaxTwo {
         display: none;
     }
-
-
-
 }
