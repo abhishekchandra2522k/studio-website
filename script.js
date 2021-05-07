@@ -40,16 +40,24 @@ document.addEventListener('DOMContentLoaded', function(event){
 
 
 var myIndex = 0;
-        carousel();
-        
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 9000);    
-        }
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+
+var userFeed = new Instafeed({
+    get: 'user',
+    target: "instafeed-container",
+    resolution: 'low_resolution',
+    accessToken: 'IGQVJYdUlaUUxqU0lRNVFtQTZAlbGhXMUhWOHVxRnpaUWNVRm9OS3ViQThzbXM5c1Vic3gxcUZA5TUIxekdMZAkhWV3NScUpfaDk1c2Q0ZAVdOV0RFaFhxbm53VWV0ZA0x5VGZAjcHJIbmtKNC1VWnpKMzVSbgZDZD'
+});
+userFeed.run();
