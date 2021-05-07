@@ -119,9 +119,9 @@
             </figure>
         </section>
         
-        <div class="title">
+        <!-- <div class="title">
             <h1 style="font-family: 'Dancing Script', cursive;">Signature</h1>
-        </div>
+        </div> -->
 
         <div class="blog w3-section" id="blog">
             <img class="mySlides w3-animate-fading" src="imgs/6.JPG" alt="">
@@ -180,6 +180,10 @@
             
 
             </div>
+
+        <h1 style="text-align: center">Instagram Feed</h1>
+    	<div id="instafeed-container"></div>
+
     </div>
 
         <div class="parallaxTwo"></div>
@@ -245,5 +249,15 @@
             }
         })
     </script>
+    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+    <script type="text/javascript">
+        var userFeed = new Instafeed({
+            get: 'user',
+            target: "instafeed-container",
+            resolution: 'low_resolution',
+            accessToken: 'YOUR_INSTAGRAM_ACCESS_TOKEN_GOES_HERE'
+        });
+        userFeed.run();
+        </script>
 </body>
 </html>
