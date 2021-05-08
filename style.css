@@ -509,6 +509,26 @@ body {
 
 }
 
+/* Footer */
+.new_footer{
+    padding: 2rem;
+}
+
+.footer__social{
+    text-align: center;
+}
+
+.footer__social a{
+    padding: 1.5rem;
+}
+
+.footer__info p{
+    text-align: center;
+}
+.none{
+display: none;
+}
+
 .footer-area{
     padding-top: 50px;
     padding-bottom: 20px;
@@ -631,6 +651,12 @@ body {
         width: 100%;
         margin-bottom:30px;
     }
+    .none{
+        display: block;
+    }
+    .laptop{
+        display: none;
+    }
     }
   
   @media only screen and (max-width:960px){
@@ -661,7 +687,7 @@ body {
     width: 100%;
     margin: 0 auto;
     line-height: 3.3em;
-    padding-bottom: 0 !important;
+    padding-bottom: 2rem !important;
 }
 
 .title p {
