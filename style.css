@@ -200,7 +200,7 @@ body {
     grid-template-rows: repeat(4, 7vw);
     grid-gap: 15px;
     width: 100%;
-    padding: 0 373px;
+    padding: 2rem 373px;
 }
 
 .gallery__item--1 {
@@ -373,6 +373,11 @@ body {
     width: 50px;
     background-color: #fff;
     height: 3px;
+}
+
+.container_form {
+    /* border-radius: 5px; */
+    background-color: #ffffff;
 }
 
 #testimonials .container .testimonials-box{
@@ -653,10 +658,12 @@ display: none;
     }
     .none{
         display: block;
+        text-transform: uppercase;
     }
     .laptop{
         display: none;
     }
+    
     }
   
   @media only screen and (max-width:960px){
@@ -736,6 +743,11 @@ display: none;
     nav{
         padding-right: 1rem;
         padding-top: 1rem;
+    }
+    .container_form {
+        border-radius: 5px;
+        background-color: #ffffff;
+        padding: 1rem 20rem;
     }
 }
 
@@ -880,9 +892,27 @@ display: none;
         padding-bottom: 60px;
     }
 
-    .parallaxOne, .parallaxTwo {
-        object-fit: cover;
+    .parallaxOne {
+        background: url("imgs/reviews.jpg") center;
+        height: 90vh;
         width: 100%;
+        background-size: contain;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    
+    .parallaxTwo {
+        background: url("imgs/5.jpg") center;
+        height: 50vh;
+        background-size: contain;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .title{
+        font-size: 12px;
+        padding-bottom: 2rem !important;
+        text-transform: uppercase;
     }
 
 
@@ -904,9 +934,14 @@ display: none;
     .center{
         padding-left: 17rem;
     }
+    .container_form {
+        border-radius: 5px;
+        background-color: #ffffff;
+        padding: 1rem 40rem;
+    }
 }
 @media screen and (min-width: 2000px){
     .gallery-home{
-        padding: 0 42rem;
+        padding: 4rem 42rem;
     }
 }

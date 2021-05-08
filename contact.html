@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Najuk Studios | Contact</title>
     <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/png/128/344/344983.png" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="gstyles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600,700,900" rel="stylesheet">
@@ -18,7 +16,7 @@
           width: 100%;
           padding: 12px;
           border: 1px solid #ccc;
-          border-radius: 4px;
+          /* border-radius: 4px; */
           box-sizing: border-box;
           margin-top: 6px;
           margin-bottom: 16px;
@@ -26,7 +24,7 @@
         }
         
         input[type=submit] {
-          background-color: #04AA6D;
+          background-color: gray;
           color: white;
           padding: 12px 20px;
           border: none;
@@ -35,7 +33,7 @@
         }
         
         input[type=submit]:hover {
-          background-color: #45a049;
+          background-color: rgb(109, 109, 109);
         }
         
         .container_form {
@@ -43,7 +41,10 @@
           background-color: #ffffff;
           padding: 20px;
         }
+        
         </style>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="gstyles.css">
     
 </head>
 
@@ -60,18 +61,18 @@
             <div class="fullMenu menu">
                 <ul>            
                     <li><a href="/">Home</a></li>
-                    <li><a href="">Services</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="gallery.html">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </div>
 
             <div class="menu" id="collMenu">
                 <ul>            
                     <li><a href="/">Home</a></li>
-                    <li><a href="">Services</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="gallery.html">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </div>
 
@@ -84,68 +85,23 @@
     <br><br>
     
     <div class="container_form">
-        <form action="/action_page.php">
-          <label for="fname">Name</label>
+        <form action="">
+          <label for="fname">Name*</label>
           <input type="text" id="fname" name="Name" placeholder="Name.." required>
       
-          <label for="lname">Email</label>
+          <label for="lname">Email*</label>
           <input type="email" id="lname" name="Email" placeholder="Email" required>
             
-          <label for="number">Contact Number</label>
+          <label for="number">Contact Number*</label>
           <input type="number" name="number" id="number" placeholder="+91 XXXX XXX XXX" required>
-          <!-- <label for="country">Country</label>
-          <select id="country" name="country" required>
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select> -->
           <label for="date">Date of Wedding</label>
           <input type="date" name="date" required>
           <label for="subject">Tell us about your wedding plan</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+          <div style="text-align: center;"><input type="submit" value="Submit"></div>
           
-          <input type="submit" value="Submit">
         </form>
       </div>
-        
-      <!-- <footer class="footer-area">
-        <div class="footer-wave-box">
-            <div class="footer-wave footer-animation"></div>
-        </div>
-        <div class="main">
-            <div class="footer">
-                <div class="single-footer">
-                    <img src="imgs/logo.png" alt="">
-                    </p>
-                    <div class="footer-social">
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="single-footer">
-                    <h4>Menu</h4>
-                    <ul>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> About</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Gallery</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Services</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
-                    </ul>
-                </div>
-                <div class="single-footer">
-                    <h4>Contact Information</h4>
-                    <ul>
-                        <li><a href="#"><i class="fas fa-map-marker-alt"></i>Raja Park, Jaipur, Raj - 302004</a></li>
-                        <li><a href="tel:+91-97829-11284"><i class="fas fa-mobile-alt"></i>+91-97829-11284</a></li>
-                        <li><a href="mailto:nstudio.chinmay@gmail.com"><i class="fas fa-envelope"></i>nstudio.chinmay@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copy">
-                <p>&copy; 2021 All Rights Reserved</p>
-            </div>
-        </div>
-    </footer> -->
 
     <footer>
         <div class="new_footer">
@@ -156,7 +112,7 @@
             </div><br>
             <div class="footer__info">
                 <p class="laptop">NAJUK STUDIO PHOTOGRAPHY &emsp;  Raja Park, Jaipur, Rajasthan - 302004  &emsp; +91-97829-11284 &emsp; nstudio.chinmay@gmail.com</p>
-                <p class="none">NAJUK STUDIO PHOTOGRAPHY <br>  Raja Park, Jaipur, Rajasthan - 302004 <br> +91-97829-11284 <br> nstudio.chinmay@gmail.com</p>
+                <p class="none"><span style="font-weight: bold; opacity: 0.8;">NAJUK STUDIO PHOTOGRAPHY </span>&nbsp;JAIPUR, <br>  Rajasthan - 302004 <br> +91-97829-11284 <br> nstudio.chinmay@gmail.com</p>
             </div>
         </div>
     </footer>
