@@ -687,7 +687,7 @@ display: none;
     width: 100%;
     margin: 0 auto;
     line-height: 3.3em;
-    padding-bottom: 2rem !important;
+    padding-bottom: 0 !important;
 }
 
 .title p {
