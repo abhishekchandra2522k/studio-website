@@ -894,37 +894,11 @@ display: none;
     }
 
     .parallaxOne {
-        position: relative;
         background: url('imgs/reviews2.jpg') center;
-        background-size: cover;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
-        background-repeat: no-repeat;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        -webkit-transform: translatez(0);
-        transform: translatez(0);
     }
     
     .parallaxTwo {
-        position: relative;
         background: url('imgs/5_1.jpg') center;
-        background-size: cover;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
-        background-repeat: no-repeat;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        -webkit-transform: translatez(0);
-        transform: translatez(0);
     }
 
     .title{
