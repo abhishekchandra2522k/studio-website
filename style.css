@@ -894,13 +894,15 @@ display: none;
     }
 
     .parallaxOne {
-        background-size: cover;
-        -webkit-background-size: cover;
+        height: 30vh;
+        background-size: contain;
+        -webkit-background-size: contain;
     }
     
     .parallaxTwo {
-        background-size: cover;
-        -webkit-background-size: cover;
+        height: 40vh;
+        background-size: contain;
+        -webkit-background-size: contain;
     }
 
     .title{
