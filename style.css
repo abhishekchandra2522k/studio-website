@@ -894,15 +894,43 @@ display: none;
     }
 
     .parallaxOne {
-        height: 30vh;
-        background-size: contain;
-        -webkit-background-size: contain;
+        display: -webkit-box;
+        position: relative;
+        overflow: hidden;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        z-index: 99999;
     }
     
     .parallaxTwo {
-        height: 40vh;
-        background-size: contain;
-        -webkit-background-size: contain;
+        display: -webkit-box;
+        position: relative;
+        overflow: hidden;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        z-index: 99999;
     }
 
     .title{
