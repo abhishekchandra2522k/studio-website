@@ -913,11 +913,12 @@ display: none;
         justify-content: center;
         z-index: 99999;
         background-attachment: fixed;
+        -webkit-background-attachment: fixed;
         background-repeat: no-repeat;
     }
     
     .parallaxTwo {
-        background: url('imgs/5_1.jpg') center;
+        /* background: url('imgs/5_1.jpg') center; */
         display: -webkit-box;
         position: relative;
         overflow: hidden;
@@ -935,10 +936,8 @@ display: none;
         -webkit-justify-content: center;
         justify-content: center;
         z-index: 99999;
-        background-size: contain;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
         background-attachment: fixed;
+        -webkit-background-attachment: fixed;
         background-repeat: no-repeat;
     }
 
