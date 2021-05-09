@@ -893,17 +893,15 @@ display: none;
         padding-bottom: 60px;
     }
 
-    /* .parallaxOne {
-        height: 30vh;
-        background-size: contain;
-        background-attachment:fixed;
+    .parallaxOne {
+        background-size: cover;
+        -webkit-background-size: cover;
     }
     
     .parallaxTwo {
-        height: 38vh;
-        background-size: contain;
-        background-attachment: fixed;
-    } */
+        background-size: cover;
+        -webkit-background-size: cover;
+    }
 
     .title{
         font-size: 12px;
