@@ -894,7 +894,7 @@ display: none;
 
     .parallaxOne {
         background: url("imgs/reviews.jpg") center;
-        height: 90vh;
+        height: 30vh;
         width: 100%;
         background-size: contain;
         background-attachment: fixed;
@@ -903,7 +903,7 @@ display: none;
     
     .parallaxTwo {
         background: url("imgs/5.jpg") center;
-        height: 50vh;
+        height: 38vh;
         background-size: contain;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -915,6 +915,27 @@ display: none;
         text-transform: uppercase;
     }
 
+    #testimonials .container .testimonials-box {
+        position: relative;
+        z-index: 1;
+        margin: 20rem auto 0 auto;
+        transform: scale(0.7);
+    }
+    .owl-carousel.owl-loaded {
+        display: block;
+    }
+    .testimonials{
+        padding: 1rem 0 !important;
+    }
+    .testimonials .container{
+        padding: 0;
+    }
+
+    .owl-theme .owl-dots, .owl-theme .owl-nav {
+        text-align: center;
+        -webkit-tap-highlight-color: transparent;
+        margin-top: -2rem;
+    }
 
 
 }
