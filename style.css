@@ -941,7 +941,7 @@ input[type=text], input[type=number], input[type=email], input[type=date], selec
     }
     .parallaxTwo {
         background: url('imgs/5_1.jpg') center;
-        height: 40vh;
+        height: 60vh;
         background-size: cover;
         -webkit-background-size: cover;
         background-attachment: fixed;
