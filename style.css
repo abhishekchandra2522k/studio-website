@@ -708,6 +708,37 @@ display: none;
 }
 
 
+input[type=text], input[type=number], input[type=email], input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    /* border-radius: 4px; */
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: gray;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(109, 109, 109);
+  }
+  
+  .container_form {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+
 
 
 /************************************
@@ -895,10 +926,12 @@ display: none;
 
     
     .parallaxOne {
-        background: url('imgs/reviews2.jpg') center;
-        height: 90vh;
-        background-size: cover;
-        background-attachment: scroll;
+        background: url('imgs/reviews.jpg') center;
+        height: 30vh;
+        background-size: contain;
+        -webkit-background-size: contain;
+        background-attachment: fixed;
+        -webkit-background-attachment: fixed;
         z-index: 999;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
@@ -907,10 +940,12 @@ display: none;
         background-repeat: no-repeat;
     }
     .parallaxTwo {
-        background: url('imgs/5_1.jpg') center;
-        height: 90vh;
-        background-size: cover;
-        background-attachment: scroll;
+        background: url('imgs/5.jpg') center;
+        height: 40vh;
+        background-size: contain;
+        -webkit-background-size: contain;
+        background-attachment: fixed;
+        -webkit-background-attachment: fixed;
         z-index: 999;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
