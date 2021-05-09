@@ -944,13 +944,6 @@ input[type=text], input[type=number], input[type=email], input[type=date], selec
         height: 60vh;
         background-size: scroll;
         -webkit-background-size: scroll;
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
-        z-index: 999;
-        backface-visibility:visible;
-        -webkit-backface-visibility: hidden;
-        -webkit-transform: translateZ(0x);
-        transform: translateZ(0x);
         background-repeat: no-repeat;
     }
 
