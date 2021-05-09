@@ -893,6 +893,7 @@ display: none;
         padding-bottom: 60px;
     }
 
+    
     .parallaxOne {
         background: url('imgs/reviews2.jpg') center;
         height: 90vh;
@@ -905,6 +906,18 @@ display: none;
         background-repeat: no-repeat;
     }
     
+    .parallaxOne::before{
+        content: '';
+        background: url('imgs/reviews2.jpg') center;
+        height: 90vh;
+        background-size: cover;
+        position: fixed;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translateZ(0x);
+        transform: translateZ(0x);
+        background-repeat: no-repeat;
+    }
     .parallaxTwo {
         background: url('imgs/5_1.jpg') center;
         height: 90vh;
