@@ -893,7 +893,7 @@ display: none;
         padding-bottom: 60px;
     }
 
-    .parallaxOne {
+    /* .parallaxOne {
         height: 30vh;
         background-size: contain;
         background-attachment:fixed;
@@ -903,7 +903,7 @@ display: none;
         height: 38vh;
         background-size: contain;
         background-attachment: fixed;
-    }
+    } */
 
     .title{
         font-size: 12px;
