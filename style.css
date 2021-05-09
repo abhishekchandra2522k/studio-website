@@ -897,7 +897,11 @@ display: none;
         background: url('imgs/reviews2.jpg') center;
         height: 90vh;
         background-size: cover;
-        background-attachment: scroll;
+        background-attachment: fixed;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translateZ(0x);
+        transform: translateZ(0x);
         background-repeat: no-repeat;
     }
     
@@ -905,7 +909,11 @@ display: none;
         background: url('imgs/5_1.jpg') center;
         height: 90vh;
         background-size: cover;
-        background-attachment: scroll;
+        background-attachment: fixed;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translateZ(0x);
+        transform: translateZ(0x);
         background-repeat: no-repeat;
     }
 
