@@ -942,13 +942,13 @@ input[type=text], input[type=number], input[type=email], input[type=date], selec
     .parallaxTwo {
         background: url('imgs/5.jpg') center;
         height: 40vh;
-        background-size: contain;
-        -webkit-background-size: contain;
+        background-size: cover;
+        -webkit-background-size: cover;
         background-attachment: fixed;
         -webkit-background-attachment: fixed;
         z-index: 999;
+        backface-visibility:visible;
         -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
         -webkit-transform: translateZ(0x);
         transform: translateZ(0x);
         background-repeat: no-repeat;
