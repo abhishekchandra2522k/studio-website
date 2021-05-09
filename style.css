@@ -895,10 +895,18 @@ display: none;
 
     .parallaxOne {
         background: url('imgs/reviews2.jpg') center;
+        height: 90vh;
+        background-size: cover;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
     }
     
     .parallaxTwo {
         background: url('imgs/5_1.jpg') center;
+        height: 90vh;
+        background-size: cover;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
     }
 
     .title{
