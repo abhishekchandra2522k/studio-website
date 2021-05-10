@@ -927,7 +927,7 @@ input[type=text], input[type=number], input[type=email], input[type=date], selec
     
     .parallaxOne {
         background: url('imgs/reviews2.jpg') center;
-        height: 80vh;
+        height: 100vh;
         background-size: contain;
         -webkit-background-size: contain;
         background-attachment: fixed;
