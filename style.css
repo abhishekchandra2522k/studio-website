@@ -926,22 +926,27 @@ input[type=text], input[type=number], input[type=email], input[type=date], selec
 
     
     .parallaxOne {
-        background: url('imgs/reviews.jpg') center;
+        background: url('imgs/reviews2.jpg') center;
         height: 80vh;
         background-size: contain;
         -webkit-background-size: contain;
         background-attachment: fixed;
         -webkit-background-attachment: fixed;
+        -moz-backface-visibility: hidden;
         z-index: 999;
-        -webkit-backface-visibility: hidden;
+        position: static;
         backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
         -webkit-transform: translateZ(0x);
         transform: translateZ(0x);
         background-repeat: no-repeat;
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+        overflow-y: hidden;
     }
     .parallaxTwo {
         background: url('imgs/5_1.jpg') center;
-        height: 90vh;
+        height: 100vh;
         background-size: cover;
         /* background-attachment: scroll; */
     }
