@@ -356,6 +356,15 @@ body {
 
 .parallax{
     height: 100%;
+    z-index: 1;
+}
+
+.one{
+    background-image: url('reviews.jpg');
+}
+
+.two{
+    background-image: url('5.jpg');
 }
 
 .parallax_section{
