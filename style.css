@@ -930,7 +930,6 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
 
     
     .parallaxOne {
-        position: static;
         background: url('imgs/reviews2.jpg') center;
         height: 100vh;
         background-size: contain;
@@ -941,11 +940,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
         backface-visibility: hidden !important;
         -webkit-backface-visibility: hidden !important;
         -moz-backface-visibility: hidden;
-        -webkit-transform: translateZ(0x);
-        transform: translateZ(0x);
         background-repeat: no-repeat;
-        transform: translate3d(0,0,0);
-        -webkit-transform: translate3d(0,0,0);
         overflow-y: hidden;
         overflow-y: scroll !important;
     }
