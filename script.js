@@ -7,17 +7,6 @@ document.addEventListener('DOMContentLoaded', function(event){
     
     console.log("loaded");
 
-    // window.addEventListener('scroll', function(){
-    //     var navi = document.querySelector('.header');
-
-    //     if(this.window.scrollY > 0) {
-    //         navi.className += ' scrolledHeader';
-    //     } else {
-    //         console.log("reached top");
-    //         navi.classList.remove("scrolledHeader");
-    //     }
-    // });
-
     for(i = 0; i < serviceBox.length; i++) {
         serviceBox[i].addEventListener('touchstart', function(){
             this.classname= '.hover';
@@ -61,3 +50,13 @@ var userFeed = new Instafeed({
     accessToken: 'IGQVJYdUlaUUxqU0lRNVFtQTZAlbGhXMUhWOHVxRnpaUWNVRm9OS3ViQThzbXM5c1Vic3gxcUZA5TUIxekdMZAkhWV3NScUpfaDk1c2Q0ZAVdOV0RFaFhxbm53VWV0ZA0x5VGZAjcHJIbmtKNC1VWnpKMzVSbgZDZD'
 });
 userFeed.run();
+
+function parallax(element, distance, speed){
+    const item = document.querySelector(element);
+
+    item.style.transform = `translateY(${distance * speed}px)`;
+}
+
+window.addEventListener('scroll', function(){
+    parallax('parallaxOne', window.scrollY, 1);
+})
