@@ -932,7 +932,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
     .parallaxOne {
         background: url('imgs/reviews2.jpg') center;
         height: 100vh;
-        background-size: cover;
+        background-size:contain;
         background-attachment: fixed;
     }
     .parallaxTwo {
