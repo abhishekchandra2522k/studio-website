@@ -340,15 +340,22 @@ body {
 
 .parallaxOne {
     background: url("imgs/reviews.jpg") center;
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.parallax-window {
+    min-height: 100vh;
+    background: transparent;
+    background-size: cover;
 }
 
 .parallaxTwo {
     background: url("imgs/5.jpg") center;
-    height: 50vh;
+    height: 100vh;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -738,7 +745,6 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
   }
 
   #number{
-    width: 300px;
     margin: 1rem 0;
   }
   
@@ -847,7 +853,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
         width: 100%;
     }
     .header img{
-        margin: 6rem;
+        margin: 2rem auto;
     }
 
     .fullMenu {
@@ -856,7 +862,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
 
     nav {
         width: 100%;
-        margin-top: -6rem;
+        margin-top: -2rem;
     }
 
     #toggleMenu {
@@ -930,7 +936,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
 
     
     .parallaxOne {
-        background: url('imgs/reviews2.jpg') center;
+        background-image: url("imgs/reviews2.jpg");        
         height: 100vh;
         background-size:contain;
         background-attachment: fixed;
