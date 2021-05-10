@@ -739,7 +739,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
   }
 
   #number{
-    width: 385px;
+    width: 300px;
     margin: 1rem 0;
   }
   
