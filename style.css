@@ -927,7 +927,7 @@ input[type=text], input[type=number], input[type=email], input[type=date], selec
     
     .parallaxOne {
         background: url('imgs/reviews.jpg') center;
-        height: 30vh;
+        height: 80vh;
         background-size: contain;
         -webkit-background-size: contain;
         background-attachment: fixed;
@@ -941,7 +941,7 @@ input[type=text], input[type=number], input[type=email], input[type=date], selec
     }
     .parallaxTwo {
         background: url('imgs/5_1.jpg') center;
-        height: 60vh;
+        height: 90vh;
         background-size: cover;
         /* background-attachment: scroll; */
     }
