@@ -712,7 +712,6 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
-    /* border-radius: 4px; */
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
@@ -936,11 +935,11 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
         height: 100vh;
         background-size: contain;
         -webkit-background-size: contain;
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
+        background-attachment: fixed !important;
+        -webkit-background-attachment: fixed !important;
         z-index: 999;
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden !important;
+        -webkit-backface-visibility: hidden !important;
         -moz-backface-visibility: hidden;
         -webkit-transform: translateZ(0x);
         transform: translateZ(0x);
@@ -948,6 +947,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
         transform: translate3d(0,0,0);
         -webkit-transform: translate3d(0,0,0);
         overflow-y: hidden;
+        overflow-y: scroll !important;
     }
     .parallaxTwo {
         background: url('imgs/5_1.jpg') center;
