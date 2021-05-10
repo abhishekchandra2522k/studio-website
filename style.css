@@ -934,6 +934,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
         height: 100vh;
         background-size:contain;
         background-attachment: fixed;
+        background-repeat: no-repeat;
     }
     .parallaxTwo {
         background: url('imgs/5_1.jpg') center;
