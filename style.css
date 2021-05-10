@@ -933,6 +933,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
         background: url('imgs/reviews2.jpg') center;
         height: 100vh;
         background-size: cover;
+        background-attachment: fixed;
     }
     .parallaxTwo {
         background: url('imgs/5_1.jpg') center;
