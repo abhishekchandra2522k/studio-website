@@ -15,11 +15,10 @@ q {
     font-style: italic;
 }
 
-.container {
-    text-align: center;
+section {
+    text-align: left;
 }
-
-.container > div {
+section {
     padding: 65px;
 }
 
@@ -342,15 +341,9 @@ body {
     background: url("imgs/reviews.jpg") center;
     height: 100vh;
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-repeat: no-repeat;
     z-index: -1;
-}
-
-.parallax-window {
-    min-height: 100vh;
-    background: transparent;
-    background-size: cover;
 }
 
 .parallaxTwo {
@@ -359,6 +352,14 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+}
+
+.parallax{
+    height: 100%;
+}
+
+.parallax_section{
+    min-height: 100vh;
 }
 
 #testimonials h2{
@@ -689,6 +690,9 @@ display: none;
         width: 100%;
         padding: 0 30px;
     }
+    .new_parallax{
+        padding-top: 2rem;
+    }
     }
 
 
@@ -704,10 +708,11 @@ display: none;
 .title p {
     width: 60%;
     margin: 0 auto;
-    font-size: .8em;
+    font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: .1em;
     line-height: 1.4em;
+    text-align: center;
 }
 
 .title>h1 {
@@ -755,8 +760,11 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
             RESPONSIVE
 ************************************/
 
-@media only screen and (max-width: 1690px) {
-
+@media screen and (min-width: 1690px) {
+    section{
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -792,7 +800,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
 @media only screen and (max-width: 980px) {
 
 
-    .container>div {
+    section {
         padding: 40px;
     }
 
@@ -896,11 +904,11 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
 
 @media only screen and (max-width: 480px) {
 
-    .container > div {
+    section{
         padding: 40px 10px;
     }
 
-    .container {
+    section {
         padding: 0;
         margin: 0;
     }
@@ -918,6 +926,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
     .title p {
         width: 100%;
         font-size: 1em;
+        text-align: center;
     }
 
     .serviceBox {
