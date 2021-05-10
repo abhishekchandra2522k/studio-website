@@ -708,7 +708,7 @@ display: none;
 }
 
 
-input[type=text], input[type=number], input[type=email], input[type=date], select, textarea {
+input[type=text], input[type=tel], input[type=email], input[type=date], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -736,6 +736,11 @@ input[type=text], input[type=number], input[type=email], input[type=date], selec
     border-radius: 5px;
     background-color: #ffffff;
     padding: 20px;
+  }
+
+  #number{
+    width: 385px;
+    margin: 1rem 0;
   }
   
 
@@ -926,17 +931,17 @@ input[type=text], input[type=number], input[type=email], input[type=date], selec
 
     
     .parallaxOne {
+        position: static;
         background: url('imgs/reviews2.jpg') center;
         height: 100vh;
         background-size: contain;
         -webkit-background-size: contain;
         background-attachment: fixed;
         -webkit-background-attachment: fixed;
-        -moz-backface-visibility: hidden;
         z-index: 999;
-        position: static;
         backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
         -webkit-transform: translateZ(0x);
         transform: translateZ(0x);
         background-repeat: no-repeat;
