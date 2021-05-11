@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="gstyles.css">
     
@@ -52,24 +53,27 @@
     <h1 style="text-align: center;">Contact Us</h1>
     <br><br>
     
-    <div class="container_form">
-        <form action="">
-          <label for="fname">Name*</label>
-          <input type="text" id="fname" name="Name" placeholder="Name.." required>
-      
-          <label for="lname">Email*</label>
-          <input type="email" id="lname" name="Email" placeholder="Email" required>
-            
-          <label for="number">Contact Number*</label>
-          <input type="number" name="number" id="number" placeholder="+91 XXXX XXX XXX" required>
-          <label for="date">Date of Wedding</label>
-          <input type="date" name="date" required>
-          <label for="subject">Tell us about your wedding plan</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
-          <div style="text-align: center;"><input type="submit" value="Submit"></div>
+    <section>
+        <div class="container_form">
+            <h1 style="text-align: center;">Contact Us</h1>
+            <form action="">
+              <label for="fname">Name*</label>
+              <input type="text" id="fname" name="Name" placeholder="Name.." required>
           
-        </form>
-      </div>
+              <label for="lname">Email*</label>
+              <input type="email" id="lname" name="Email" placeholder="Email" required>
+                
+              <label for="number">Contact Number*</label><br>
+              <input type="tel" name="number" id="number" placeholder="" required><br><br>
+              <label for="date">Date of Wedding</label>
+              <input type="date" name="date" required>
+              <label for="subject">Tell us about your wedding plan</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+              <div style="text-align: center;"><input type="submit" value="Submit"></div>
+              
+            </form>
+        </div>
+    </section>
 
     <footer>
         <div class="new_footer">
@@ -86,5 +90,13 @@
     </footer>
     
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script>
+        const phoneInputField = document.querySelector("#number");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
 </body>
 </html>
