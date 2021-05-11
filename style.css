@@ -343,7 +343,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    z-index: -1;
 }
 
 .parallaxTwo {
