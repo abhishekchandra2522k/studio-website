@@ -699,6 +699,10 @@ display: none;
         width: 100%;
         padding: 0 30px;
     }
+    .gallery-home_2 {
+        grid-template-rows: repeat(4, 8vw);
+        padding: 10px 30px;
+    }
     .new_parallax{
         padding-top: 2rem;
     }
@@ -954,9 +958,9 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
 
     
     .parallaxOne {
-        background-image: url("imgs/reviews2.jpg");        
+        background-image: url("imgs/reviews.jpg");        
         height: 100vh;
-        background-size:contain;
+        background-size:cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
     }
@@ -1002,13 +1006,24 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
     .gallery-home{
         padding: 4rem 32rem;
     }
+    .gallery-home_2 {
+        grid-template-rows: repeat(4, 8vw);
+        padding: 4rem 16rem;
+    }
     .center{
         padding-left: 19rem;
     }
 }
 @media screen and (min-width: 1800px){
+    .gallery-home {
+        grid-template-rows: repeat(4, 8vw);
+    }
     .gallery-home{
-        padding: 4rem 32rem;
+        padding: 4rem 29rem;
+    }
+    .gallery-home_2 {
+        grid-template-rows: repeat(4, 8vw);
+        padding: 4rem 16rem;
     }
     .center{
         padding-left: 17rem;
