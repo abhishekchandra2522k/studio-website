@@ -85,7 +85,7 @@
             <img src="imgs/04.JPG" class="gallery__img" alt="Image 4">
         </figure>
         <figure class="gallery__item gallery__item--5">
-            <img src="imgs/05.jpg" class="gallery__img" alt="Image 5">
+            <img src="imgs/09.jpg" class="gallery__img" alt="Image 5">
         </figure>
         <figure class="gallery__item gallery__item--6">
             <img src="imgs/06.jpg" class="gallery__img" alt="Image 6">
@@ -94,10 +94,10 @@
             <img src="imgs/07.jpg" class="gallery__img" alt="Image 7">
         </figure>
         <figure class="gallery__item gallery__item--8">
-            <img src="imgs/08.jpg" class="gallery__img" alt="Image 8">
+            <img src="imgs/05.jpg" class="gallery__img" alt="Image 8">
         </figure>
         <figure class="gallery__item gallery__item--9">
-            <img src="imgs/09.jpg" class="gallery__img" alt="Image 9">
+            <img src="imgs/08.jpg" class="gallery__img" alt="Image 9">
         </figure>
     </section>
 
@@ -165,6 +165,11 @@
     <section>
         <div class="container_form">
             <h1 style="text-align: center;">Contact Us</h1>
+            <br>
+            <img src="imgs/cover 1.JPG" alt="" class="contact_img" id="blog">
+            <p style="text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui possimus ipsum minus maiores modi officia saepe, exercitationem delectus ad quia eius beatae eligendi a maxime reiciendis iste rerum odio quos.</p>
+            <br><br>
+            <!-- <img src="imgs/04.JPG" alt=""> -->
             <form action="">
               <label for="fname">Name*</label>
               <input type="text" id="fname" name="Name" placeholder="Name.." required>
@@ -192,8 +197,8 @@
                 <a href=""><i class="fas fa-envelope"></i></a>
             </div><br>
             <div class="footer__info">
-                <p class="laptop">NAJUK STUDIO PHOTOGRAPHY &emsp;  Raja Park, Jaipur, Rajasthan - 302004  &emsp; +91-97829-11284 &emsp; nstudio.chinmay@gmail.com</p>
-                <p class="none"><span style="font-weight: bold; opacity: 0.8;">NAJUK STUDIO PHOTOGRAPHY </span>&nbsp;JAIPUR, <br>  Rajasthan - 302004 <br> +91-97829-11284 <br> nstudio.chinmay@gmail.com</p>
+                <p class="laptop">NAJUK STUDIO PHOTOGRAPHY &emsp;  Raja Park, Jaipur, Rajasthan - 302004  &emsp; +91-97829-11284 &emsp; najukstudio@gmail.com</p>
+                <p class="none"><span style="font-weight: bold; opacity: 0.8;">NAJUK STUDIO PHOTOGRAPHY </span>&nbsp;JAIPUR, <br>  Rajasthan - 302004 <br> +91-97829-11284 <br> najukstudio@gmail.com</p>
             </div>
         </div>
     </footer>
@@ -229,9 +234,22 @@
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
         <script>
+            function getIp(callback) {
+                fetch('https://ipinfo.io/json?token=c185a845b02185', { headers: { 'Accept': 'application/json' }})
+                .then((resp) => resp.json())
+                .catch(() => {
+                    return {
+                    country: 'in',
+                    };
+                })
+                .then((resp) => callback(resp.country));
+            }
             const phoneInputField = document.querySelector("#number");
             const phoneInput = window.intlTelInput(phoneInputField, {
-              utilsScript:
+                preferredCountries: ["us","in"],
+                initialCountry: "auto",
+                geoIpLookup: getIp,
+                utilsScript:
                 "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
             });
         </script>
@@ -247,8 +265,8 @@
 
             var player;
             var videoId = youtubeEmbedElement.dataset.videoId;
-            var startSeconds = 10;
-            var endSeconds = 100;
+            var startSeconds = 0;
+            var endSeconds = 120;
 
             onYouTubeIframeAPIReady = function () {
             player = new YT.Player("youtubeEmbed", {
