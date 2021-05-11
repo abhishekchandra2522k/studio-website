@@ -193,10 +193,11 @@ body {
 .gallery-home {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 7vw);
-    grid-gap: 15px;
+    grid-template-rows: repeat(4, 10vw);
+    gap: 5px;
+    row-gap: 18px;
     width: 100%;
-    padding: 2rem 373px;
+    padding: 2rem 260px;
 }
 
 .gallery__item--1 {
@@ -239,6 +240,58 @@ body {
     grid-column-end: 7;
     grid-row-start: 3;
     grid-row-end: 5;
+}
+
+.gallery-home_2 {
+    display: grid;
+    grid-template-rows: repeat(6, 7vw);
+    padding: 35px 10%;
+    grid-gap: 0px;
+    column-gap: 8px;
+    row-gap: 8px;
+    padding: 4rem 28rem;
+}
+
+.gallery__item-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item-2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item-3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.gallery__item-4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.gallery__item-5 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.gallery__item-6 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 7;
 }
 
 .single-img{
@@ -694,14 +747,18 @@ display: none;
     .gallery-home{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(4, 12vw);
-        grid-gap: 9px;
+        grid-template-rows: repeat(4, 13vw);
+        grid-gap: 2px;
+        row-gap: 1rem;
         width: 100%;
-        padding: 0 30px;
+        padding: 12px 20px;
     }
     .gallery-home_2 {
-        grid-template-rows: repeat(4, 8vw);
-        padding: 10px 30px;
+        grid-template-rows: repeat(6, 12vw);
+        padding: 35px 7%;
+        grid-gap: 0px;
+        column-gap: 4px;
+        row-gap: 4px;
     }
     .new_parallax{
         padding-top: 2rem;
@@ -772,12 +829,17 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
 /************************************
             RESPONSIVE
 ************************************/
+header{
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 @media screen and (min-width: 1690px) {
     section{
         padding-top: 30px;
-        padding-bottom: 0;
+        padding-bottom: 16px;
     }
+    
 }
 
 @media only screen and (min-width: 1000px) {
@@ -875,6 +937,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
     }
     .header img{
         margin: 2rem auto;
+        padding: 1rem;
     }
 
     .fullMenu {
@@ -1006,10 +1069,6 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
     .gallery-home{
         padding: 4rem 32rem;
     }
-    .gallery-home_2 {
-        grid-template-rows: repeat(4, 8vw);
-        padding: 4rem 16rem;
-    }
     .center{
         padding-left: 19rem;
     }
@@ -1020,10 +1079,6 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
     }
     .gallery-home{
         padding: 4rem 29rem;
-    }
-    .gallery-home_2 {
-        grid-template-rows: repeat(4, 8vw);
-        padding: 4rem 16rem;
     }
     .center{
         padding-left: 17rem;
