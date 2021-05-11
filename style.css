@@ -343,6 +343,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    z-index: -1;
 }
 
 .parallaxTwo {
@@ -957,9 +958,9 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
 
     
     .parallaxOne {
-        background-image: url("imgs/reviews.jpg");        
+        background-image: url("imgs/reviews2.jpg");        
         height: 100vh;
-        background-size:cover;
+        background-size:contain;
         background-attachment: fixed;
         background-repeat: no-repeat;
     }
