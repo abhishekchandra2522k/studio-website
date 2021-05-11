@@ -53,7 +53,7 @@
     <section>
         <div class="container_form">
             <h1 style="text-align: center;">Contact Us</h1>
-            <img src="imgs/04.JPG" alt="">
+            <img src="imgs/cover 1.JPG" alt="" class="contact_img" id="blog">
             <form action="">
               <label for="fname">Name*</label>
               <input type="text" id="fname" name="Name" placeholder="Name.." required>
@@ -90,8 +90,21 @@
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script>
+        function getIp(callback) {
+            fetch('https://ipinfo.io/json?token=c185a845b02185', { headers: { 'Accept': 'application/json' }})
+            .then((resp) => resp.json())
+            .catch(() => {
+                return {
+                country: 'in',
+                };
+            })
+            .then((resp) => callback(resp.country));
+        }
         const phoneInputField = document.querySelector("#number");
         const phoneInput = window.intlTelInput(phoneInputField, {
+            preferredCountries: ["us","in"],
+            initialCountry: "auto",
+            geoIpLookup: getIp,
             utilsScript:
             "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
         });
