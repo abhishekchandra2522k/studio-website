@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Najuk Studios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="icon" type="image/png" href="imgs/icon.svg" />
     <link rel="stylesheet" href="owl.carousel.css">
     <link rel="stylesheet" href="owl.theme.default.min.css">
@@ -14,12 +15,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>    
-    <link href="node_modules/universal-parallax/dist/universal-parallax.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>  
+  
 </head>
 
     <header>
-
+        <div class="hero">
+            <div id="youtubeEmbed" class="hero_video" data-video-id="UHnn1HCZxGE"></div>
+            <div class="hero_content">
+            </div>
+          </div>
         <div class="header">
             <input type="checkbox" id="toggleMenu" hidden>
             <label for="toggleMenu">
@@ -38,8 +43,8 @@
                         </div>
                         <div class="social_right" style="float: right;">
                             <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <!-- <li><a href=""><i class="fab fa-linkedin-in"></i></a></li> -->
                         </div>
                     </ul>
                 </div>
@@ -86,28 +91,29 @@
             <img src="imgs/06.jpg" class="gallery__img" alt="Image 6">
         </figure>
         <figure class="gallery__item gallery__item--7">
-            <img src="imgs/04.JPG" class="gallery__img" alt="Image 4">
+            <img src="imgs/07.jpg" class="gallery__img" alt="Image 7">
         </figure>
         <figure class="gallery__item gallery__item--8">
-            <img src="imgs/05.jpg" class="gallery__img" alt="Image 5">
+            <img src="imgs/08.jpg" class="gallery__img" alt="Image 8">
         </figure>
         <figure class="gallery__item gallery__item--9">
-            <img src="imgs/06.jpg" class="gallery__img" alt="Image 6">
+            <img src="imgs/09.jpg" class="gallery__img" alt="Image 9">
         </figure>
     </section>
 
     <section>
         <div class="blog w3-section" id="blog">
             <img class="mySlides w3-animate-fading" src="imgs/6.JPG" alt="">
-            <img class="mySlides w3-animate-fading" src="imgs/6.JPG" alt="">
-            <img class="mySlides w3-animate-fading" src="imgs/6.JPG" alt="">
-            <img class="mySlides w3-animate-fading" src="imgs/6.JPG" alt="">
+            <img class="mySlides w3-animate-fading" src="imgs/cover 1.JPG" alt="">
+            <img class="mySlides w3-animate-fading" src="imgs/cover 2.JPG" alt="">
+            <img class="mySlides w3-animate-fading" src="imgs/cover 3.jpg" alt="">
+            <img class="mySlides w3-animate-fading" src="imgs/cover 4.jpg" alt="">
         </div>
     </section>
 
     <section class="gallery-home_2">
         <figure class="gallery__item gallery__item-1">
-        <img src="imgs/1.jpg" class="gallery__img" alt="Image 1">
+        <img src="imgs/1.JPG" class="gallery__img" alt="Image 1">
         </figure>
         <figure class="gallery__item gallery__item-2">
         <img src="imgs/11.jpg" class="gallery__img" alt="Image 2">
@@ -228,10 +234,57 @@
               utilsScript:
                 "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
             });
-          </script>
-    <script src="node_modules/universal-parallax/dist/universal-parallax.min.js"></script>
-    <script>
-        new universalParallax().init();
-    </script>
+        </script>
+        <script>
+            // Get element
+            var youtubeEmbedElement = document.getElementById("youtubeEmbed");
+
+            // Add YouTube API script
+            var tag = document.createElement("script");
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName("script")[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+            var player;
+            var videoId = youtubeEmbedElement.dataset.videoId;
+            var startSeconds = 10;
+            var endSeconds = 100;
+
+            onYouTubeIframeAPIReady = function () {
+            player = new YT.Player("youtubeEmbed", {
+                videoId: videoId, // YouTube Video ID
+                playerVars: {
+                autoplay: 1, // Auto-play the video on load
+                autohide: 1, // Hide video controls when playing
+                disablekb: 1,
+                controls: 0, // Hide pause/play buttons in player
+                showinfo: 0, // Hide the video title
+                modestbranding: 1, // Hide the Youtube Logo
+                loop: 1, // Run the video in a loop
+                fs: 0, // Hide the full screen button
+                rel: 0,
+                enablejsapi: 1,
+                start: startSeconds,
+                end: endSeconds
+                },
+                events: {
+                onReady: function (e) {
+                    e.target.mute();
+                    e.target.playVideo();
+                },
+                onStateChange: function (e) {
+                    if (e.data === YT.PlayerState.PLAYING) {
+                    document.getElementById("youtubeEmbed").classList.add("loaded");
+                    }
+
+                    if (e.data === YT.PlayerState.ENDED) {
+                    // Loop from starting point
+                    player.seekTo(startSeconds);
+                    }
+                }
+                }
+            });
+            };
+        </script>
 </body>
 </html>

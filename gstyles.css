@@ -53,7 +53,7 @@ li {
 }
 
 header {
-    background-image: url("imgs/home.gif");
+    background-image: url("imgs/1.JPG");
     background-position: center;
     background-size: cover;
     height: 40vh;
@@ -192,6 +192,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0 125px !important;
+    padding-top: 1rem !important;
     text-align: left;
     column-gap: 14rem;
 }
@@ -208,34 +209,63 @@ body {
 
 
 #serviceOne {
-    background: url("imgs/engagement.jpeg") center;
-    background-size: 400%;
-    transition: background-size 600ms ease-out;
+    background: url("imgs/pre\ wedding.jpg") center;
+    background-size: 100%;
+    transition: background-size 300ms ease-out;
 }
 
 
 #serviceTwo {
-    background: url("imgs/flowers.jpeg") center;
-    background-size: 200%;
-    transition: background-size 600ms ease-out;
+    background: url("imgs/wedding.jpg") center;
+    background-size: 100%;
+    transition: background-size 300ms ease-out;
 }
 
 #serviceThree {
-    background: url("imgs/portrait.jpeg") center;
-    background-size: 160%;
-    transition: background-size 600ms ease-out;
+    background: url("imgs/bridal.jpg") center;
+    background-size: 100%;
+    transition: background-size 300ms ease-out;
+}
+#serviceFour {
+    background: url("imgs/candid.jpg") center;
+    background-size: 100%;
+    transition: background-size 300ms ease-out;
+}
+
+
+#serviceFive {
+    background: url("imgs/kids\ shoot.jpg") center;
+    background-size: 100%;
+    transition: background-size 300ms ease-out;
+}
+
+#serviceSix {
+    background: url("imgs/maternity.jpg") center;
+    background-size: 100%;
+    transition: background-size 300ms ease-out;
 }
 
 #serviceOne:hover{
-    background-size: 500%;
+    background-size: 120%;
 }
 
 #serviceTwo:hover{
-    background-size: 250%;
+    background-size: 120%;
 }
 
 #serviceThree:hover {
-    background-size: 210%;
+    background-size: 120%;
+}
+#serviceFour:hover{
+    background-size: 120%;
+}
+
+#serviceFive:hover{
+    background-size: 120%;
+}
+
+#serviceSix:hover {
+    background-size: 120%;
 }
 
 .portfolio {

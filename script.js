@@ -50,3 +50,4 @@ var userFeed = new Instafeed({
     accessToken: 'IGQVJYdUlaUUxqU0lRNVFtQTZAlbGhXMUhWOHVxRnpaUWNVRm9OS3ViQThzbXM5c1Vic3gxcUZA5TUIxekdMZAkhWV3NScUpfaDk1c2Q0ZAVdOV0RFaFhxbm53VWV0ZA0x5VGZAjcHJIbmtKNC1VWnpKMzVSbgZDZD'
 });
 userFeed.run();
+
