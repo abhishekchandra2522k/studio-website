@@ -178,21 +178,21 @@ a img{
     padding: 12px;
     font-size: 18px;
     border-radius: 50%;
-    color: white;
+    color: rgb(0, 0, 0);
     background: #000;
-    background: rgba( 255, 255, 255, 0.30 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10.5px );
-    -webkit-backdrop-filter: blur( 10.5px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba( 255, 255, 255 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 
 .fullMenu ul li a i:hover{
     background: rgba(255, 255, 255, 0.644);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10.5px );
-    -webkit-backdrop-filter: blur( 10.5px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     transition: .5s;
 }
 
