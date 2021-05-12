@@ -55,7 +55,7 @@ li {
 header {
     background-image: url("imgs/header2.JPG");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     height: 50vh;
 }
 
