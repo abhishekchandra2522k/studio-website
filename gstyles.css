@@ -59,6 +59,12 @@ header {
     height: 50vh;
 }
 
+@media screen and (max-width: 768px){
+    header{
+        background-image: url("imgs/header2.jpg");
+        height: 60vh;
+    }
+}
 
 
 .header {

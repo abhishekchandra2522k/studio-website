@@ -1147,7 +1147,7 @@ header{
     
     .parallaxOne {
         background-image: url("imgs/reviews2.jpg");        
-        height: 100vh;
+        height: 80vh;
         background-size:contain;
         background-attachment: fixed;
         /* background-repeat: no-repeat; */
