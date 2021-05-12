@@ -63,7 +63,7 @@ header {
     header{
         background-image: url("imgs/header2.jpg");
         height: 60vh;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 }
