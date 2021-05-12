@@ -52,16 +52,9 @@ li {
 }
 
 header {
-    /* background-image: url("https://images.squarespace-cdn.com/content/v1/56f65cf85559866730c088c2/1541366392764-LRA7UIAA9N80WYTAVZM6/ke17ZwdGBToddI8pDm48kHUzxcQwd2DgHE3KO6VtZClZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI1qPlfs3HYKbanWcQQqBRZmpTq4czOe8Acgsq9n8pASg/ezgif-2-b6339a53e36a.gif"); */
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-    /* background-position: center;
-    background-size: cover;
-    height: 100vh; */
     transition-delay: 500ms;
     z-index: 11;
 }
@@ -514,6 +507,22 @@ body {
     min-height: 100vh;
 }
 
+.show_none {
+    position: sticky;
+    height: 10vh;
+    z-index: 999999999;
+    margin-top: -54px;
+    background: white;
+}
+
+.eapps-instagram-feed-title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 32px;
+    padding: 24px 10px;
+    font-family: 'Poppins', sans-serif;
+}
 #testimonials h2{
     color: #000;
     font-size: 3.6rem;
