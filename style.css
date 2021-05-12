@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,200;1,100&family=Quicksand:wght@300&display=swap');
 *,
 html,
 body {
@@ -22,14 +23,22 @@ section {
     padding: 65px;
 }
 
+section h2{
+    text-align: center;
+    padding: 1rem;
+    /* font-family: 'Bodoni Moda', serif; */
+    font-family: 'Josefin Slab', serif;
+    color: #26292c91;
+    font-weight: bold;
+    font-size: 40px;
+}
 
 h1,
 h2,
 h3,
 h4 {
     font-weight: 600;
-    font-family: 'Poppins',
-        sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1,
@@ -42,7 +51,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 ul,
@@ -883,10 +892,11 @@ display: none;
     width: 60%;
     margin: 0 auto;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: bold;
     letter-spacing: .1em;
     line-height: 1.4em;
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .title>h1 {
@@ -1087,6 +1097,9 @@ header{
 
     .reviews {
         display: block;  
+    }
+    section h2{
+        font-size: 20px;
     }
 }
 
