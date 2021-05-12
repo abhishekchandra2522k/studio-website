@@ -53,10 +53,10 @@ li {
 }
 
 header {
-    background-image: url("imgs/1.JPG");
+    background-image: url("imgs/header2.JPG");
     background-position: center;
     background-size: cover;
-    height: 40vh;
+    height: 50vh;
 }
 
 
