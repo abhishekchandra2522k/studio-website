@@ -269,9 +269,9 @@ body {
     text-align: center;
 }
 .home_text_img2 img{
-    height: 531px;
-    width: 1200px;
-    margin-top: 1rem;
+    height: 395px;
+    width: 82vh;
+    /* margin-top: 1rem; */
 }
 
 .services_text_img2{
