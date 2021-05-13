@@ -434,6 +434,10 @@ body {
     position: relative;
 }
 
+.album img{
+    height: 100%;
+}
+
 .albumTitle {
     display: block;
     position: absolute;
@@ -919,7 +923,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     cursor: pointer;
   }
   
