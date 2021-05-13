@@ -180,7 +180,7 @@
             <h1 style="text-align: center;">Contact Us</h1>
             <br>
             <br><br>
-            <form action="">
+            <form action="https://formspree.io/f/mrgrppjb" method="POST" id="my-form">
               <label for="fname">Name*</label>
               <input type="text" id="fname" name="Name" placeholder="Name.." required>
           
@@ -195,7 +195,8 @@
               <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
               <div style="text-align: center;"><input type="submit" value="SUBMIT"></div>
               
-            </form>
+            </form><br><br>
+            <div><span id="status"></span></div>
         </div>
     </section>
         
@@ -263,56 +264,29 @@
                 "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
             });
         </script>
-        <!-- <script>
-            // Get element
-            var youtubeEmbedElement = document.getElementById("youtubeEmbed");
-
-            // Add YouTube API script
-            var tag = document.createElement("script");
-            tag.src = "https://www.youtube.com/iframe_api";
-            var firstScriptTag = document.getElementsByTagName("script")[0];
-            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-            var player;
-            var videoId = youtubeEmbedElement.dataset.videoId;
-            var startSeconds = 0;
-            var endSeconds = 120;
-
-            onYouTubeIframeAPIReady = function () {
-            player = new YT.Player("youtubeEmbed", {
-                videoId: videoId, // YouTube Video ID
-                playerVars: {
-                autoplay: 1, // Auto-play the video on load
-                autohide: 1, // Hide video controls when playing
-                disablekb: 1,
-                controls: 0, // Hide pause/play buttons in player
-                showinfo: 0, // Hide the video title
-                modestbranding: 1, // Hide the Youtube Logo
-                loop: 1, // Run the video in a loop
-                fs: 0, // Hide the full screen button
-                rel: 0,
-                enablejsapi: 1,
-                start: startSeconds,
-                end: endSeconds
-                },
-                events: {
-                onReady: function (e) {
-                    e.target.mute();
-                    e.target.playVideo();
-                },
-                onStateChange: function (e) {
-                    if (e.data === YT.PlayerState.PLAYING) {
-                    document.getElementById("youtubeEmbed").classList.add("loaded");
-                    }
-
-                    if (e.data === YT.PlayerState.ENDED) {
-                    // Loop from starting point
-                    player.seekTo(startSeconds);
-                    }
+        <script>
+            var form = document.getElementById("my-form");
+            async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
                 }
-                }
+            }).then(response => {
+                status.classList.add('success');
+                status.innerHTML = "Thanks for your submission!";
+                // form.reset()
+            }).catch(error => {
+                status.classList.add('success');
+                status.innerHTML = "Oops! There was a problem submitting your form";
+                // form.reset()
             });
-            };
-        </script> -->
+            }
+            form.addEventListener("submit", handleSubmit)
+        </script>
 </body>
 </html>
