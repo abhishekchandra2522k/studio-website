@@ -52,27 +52,10 @@ li {
     padding: 0;
 }
 
-header {
-    background-image: url("imgs/header2_1.JPG");
-    background-position: center;
-    background-size: cover;
-    height: 50vh;
-}
-
-@media screen and (max-width: 768px){
-    header{
-        background-image: url("imgs/header2.jpg");
-        height: 60vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
-
 
 .header {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .header>h1 {

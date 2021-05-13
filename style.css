@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,200;1,100&family=Quicksand:wght@300&display=swap');
-@import url('//db.onlinewebfonts.com/c/d9a58a393d946d86051fbd9a0b594d2f?family=Audrey');
+
 *,
 html,
 body {
@@ -29,9 +29,8 @@ section h2{
     padding: 1rem;
     /* font-family: 'Bodoni Moda', serif; */
     font-family: 'Josefin Slab', serif;
-    font-family: 'Audrey', sans-serif;
     color: #26292c91;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 35px;
 }
 
@@ -255,6 +254,34 @@ nav li {
 
 body {
     overflow-x: hidden;
+}
+
+.home_text_img{
+    text-align: center;
+}
+
+.home_text_img img{
+    width: 700px;
+    height: 700px;
+}
+
+.home_text_img2{
+    text-align: center;
+}
+.home_text_img2 img{
+    height: 531px;
+    width: 1200px;
+    margin-top: 1rem;
+}
+
+.services_text_img2{
+    text-align: center;
+}
+
+.services_text_img2 img {
+    height: 438px;
+    width: 80%;
+    margin-top: 1rem;
 }
 
 /* Gallery */
@@ -882,6 +909,21 @@ display: none;
     .new_parallax{
         padding-top: 2rem;
     }
+    .home_text_img img{
+        width: 300px;
+        height: 300px;
+    }
+    .home_text_img2 img{
+        width: 350px;
+        height: 184px;
+        margin-bottom: 1rem;
+    }
+    .services_text_img2 img {
+        height: 238px;
+        margin-bottom: 2rem;
+        width: 90%;
+    }
+
     }
 
 
