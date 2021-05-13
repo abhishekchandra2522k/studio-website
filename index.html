@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Najuk Studios</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="icon" type="image/png" href="imgs/icon.svg" />
     <link rel="stylesheet" href="owl.carousel.css">
@@ -103,7 +104,6 @@
     </section>
 
     <section style="padding: 0;margin-bottom: -11px; margin-top: -11px;" class="home_text_img">
-        <!-- <h2>Wedding shenanigans and groove galore</h2> -->
         <img src="header/embrace.jpg" alt="">
     </section>
     <section>
@@ -169,9 +169,16 @@
         </div>  
     </section>   
     
-    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <div class="elfsight-app-396560c6-fc6b-401c-8d07-a4f16b02a54c"></div>
-    <div class="show_none"></div>
+    <div class="show_none"></div> -->
+
+    <!-- INSTAGRAM FEED SLIDER -->
+    <h1 style="text-align: center">FROM THE GRAM</h1>
+    <br><br>
+    <div id="instafeed-container"></div>      
+    <br><br>
+
     <div class="parallaxTwo"></div>
     
     
@@ -288,5 +295,93 @@
             }
             form.addEventListener("submit", handleSubmit)
         </script>
+
+
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+
+        <script type="text/javascript">
+            var userFeed = new Instafeed({
+                get: 'user',
+                target: "instafeed-container",
+                resolution: 'low_resolution',
+                accessToken: 'IGQVJYYk9SeFVsTGx2dkhTcEdFdUZAsc1k4eWFHMnhMckpOVTBTWXFEeF9RYnFYYXpOaEFYUkoyNXVxWUx6ZAXlyQVEzVlZAxdUxXaC1OajNiLXNUdlF6SEtlX1l1UkxTbm1SRHkxeXIxV0ktVkI1WXloYwZDZD'
+            });
+            userFeed.run();
+        </script>
+
+        <script>
+            var slide = document.getElementById('instafeed-container');
+            var x = slide.getElementsByTagName('A');
+            console.log(x);
+            console.log(x.item(1));
+            var i;
+            console.log(x.length);
+
+            function slick(){
+                $(document).ready(function(){
+                    $('.customer-logos').slick({
+                        slidesToShow: 6,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 3000,
+                        arrows: false,
+                        dots: false,
+                        pauseOnHover: true,
+                        responsive: [
+                            {
+                                breakpoint: 768,
+                                settings: {
+                                    slidesToShow: 3
+                                }
+                            },
+                            {
+                                breakpoint: 520,
+                                settings: {
+                                    slidesToShow: 2
+                                }
+                            }
+                        ]
+                    })
+                });
+            }
+            function pollDOM () {
+
+                if (x.length) {
+                    for(i = 0; i < x.length-1; i++){
+                                // console.log(x.item(i).outerHTML);
+                                // x.item(i).classList.add('swiper-slide');
+                                var p = x.item(i).parentNode;
+                                var w = document.createElement('div');
+                                w.classList.add('slide');
+                                p.replaceChild(w,x.item(i));
+                                console.log(w);
+                                w.appendChild(x.item(i));
+                                console.log(w);
+                            }
+                        slide.classList.add('customer-logos');
+                        slide.classList.add('slide');
+                        slick();
+                } else {
+                    setTimeout(pollDOM, 300);
+                }
+                }
+
+            pollDOM();
+        </script>
+
+        <script>
+
+        </script>
+        <style>
+            .slick-slide{
+                margin: 0px 1px;
+            }
+            .slick-slide img{
+                width: 100%;
+            }
+        </style>
 </body>
 </html>
