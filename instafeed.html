@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instafeed on Your Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+</head>
+<body>
+	<h1 style="text-align: center">FROM THE GRAM</h1>
+    <div id="instafeed-container"></div>        
+
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	
+    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	
+    <script type="text/javascript">
+	var userFeed = new Instafeed({
+		get: 'user',
+		target: "instafeed-container",
+    	resolution: 'low_resolution',
+		accessToken: 'IGQVJYYk9SeFVsTGx2dkhTcEdFdUZAsc1k4eWFHMnhMckpOVTBTWXFEeF9RYnFYYXpOaEFYUkoyNXVxWUx6ZAXlyQVEzVlZAxdUxXaC1OajNiLXNUdlF6SEtlX1l1UkxTbm1SRHkxeXIxV0ktVkI1WXloYwZDZD'
+	});
+	userFeed.run();
+	</script>
+
+    <script>
+    var slide = document.getElementById('instafeed-container');
+    var x = slide.getElementsByTagName('A');
+    console.log(x);
+    console.log(x.item(1));
+    var i;
+    console.log(x.length);
+    
+    function slick(){
+        $(document).ready(function(){
+            $('.customer-logos').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                dots: false,
+                pauseOnHover: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }
+                ]
+            })
+        });
+    }
+    function pollDOM () {
+
+        if (x.length) {
+            for(i = 0; i < x.length-1; i++){
+                        // console.log(x.item(i).outerHTML);
+                        // x.item(i).classList.add('swiper-slide');
+                        var p = x.item(i).parentNode;
+                        var w = document.createElement('div');
+                        w.classList.add('slide');
+                        p.replaceChild(w,x.item(i));
+                        console.log(w);
+                        w.appendChild(x.item(i));
+                        console.log(w);
+                    }
+                slide.classList.add('customer-logos');
+                slide.classList.add('slide');
+                slick();
+        } else {
+            setTimeout(pollDOM, 300);
+        }
+        }
+
+        pollDOM();
+    </script>
+
+    <script>
+
+    </script>
+    <style>
+        .slick-slide{
+            margin: 0px 1px;
+        }
+        .slick-slide img{
+            width: 100%;
+        }
+    </style>
+</body>
+</html>
