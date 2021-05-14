@@ -143,7 +143,8 @@
     </section>
 
     <div class="parallaxOne"></div>
-        
+    <br><br>
+    <h1 style="text-align: center; text-transform: none; color: #EEE8AA; font-size: 30px;">Testimonials</h1>
     <section>
         <div class="testimonials" id="testimonials">
             <div class="container">
@@ -168,10 +169,7 @@
             </div>
         </div>  
     </section>   
-    
-    <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <div class="elfsight-app-396560c6-fc6b-401c-8d07-a4f16b02a54c"></div>
-    <div class="show_none"></div> -->
+    <br><br>
 
     <!-- INSTAGRAM FEED SLIDER -->
     <h1 style="text-align: center; text-transform: none;">From The GRAM!</h1>
@@ -268,7 +266,7 @@
             const phoneInput = window.intlTelInput(phoneInputField, {
                 preferredCountries: ["us","in"],
                 initialCountry: "auto",
-                geoIpLookup: getIp,
+                // geoIpLookup: getIp,
                 utilsScript:
                 "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
             });
@@ -317,10 +315,10 @@
         <script>
             var slide = document.getElementById('instafeed-container');
             var x = slide.getElementsByTagName('A');
-            console.log(x);
-            console.log(x.item(1));
+            // console.log(x);
+            // console.log(x.item(1));
             var i;
-            console.log(x.length);
+            // console.log(x.length);
 
             function slick(){
                 $(document).ready(function(){
@@ -359,9 +357,9 @@
                                 var w = document.createElement('div');
                                 w.classList.add('slide');
                                 p.replaceChild(w,x.item(i));
-                                console.log(w);
+                                // console.log(w);
                                 w.appendChild(x.item(i));
-                                console.log(w);
+                                // console.log(w);
                             }
                         slide.classList.add('customer-logos');
                         slide.classList.add('slide');
