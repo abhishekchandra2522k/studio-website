@@ -1045,7 +1045,7 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
     padding: 0 !important;
     grid-template-columns: repeat(3,1fr);
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     margin: 0 auto;
     width: 60%;
     column-gap: 2rem;
@@ -1055,6 +1055,9 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
 @media screen and (max-width: 1441px){
     .services_text{
         width: 81%;
+    }
+    .services_text_img2 img {
+        height: 350px;
     }
 }
 
