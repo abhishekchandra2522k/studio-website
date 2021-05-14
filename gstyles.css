@@ -200,38 +200,38 @@ body {
 
 
 #serviceOne {
-    background: url("imgs/low/pre.JPG") center;
+    background: url("https://res.cloudinary.com/abhishek25/image/upload/v1621010895/pre_mnyh2b.jpg") center;
     background-size: 100%;
     transition: background-size 300ms ease-out;
 }
 
 
 #serviceTwo {
-    background: url("imgs/low/wedd.JPG") center;
+    background: url("https://res.cloudinary.com/abhishek25/image/upload/v1621010895/wedd_wkom4z.jpg") center;
     background-size: 100%;
     transition: background-size 300ms ease-out;
 }
 
 #serviceThree {
-    background: url("imgs/low/bridal\ copy.JPG") center;
+    background: url("https://res.cloudinary.com/abhishek25/image/upload/v1621010896/bridal_copy_k5hspo.jpg") center;
     background-size: 100%;
     transition: background-size 300ms ease-out;
 }
 #serviceFour {
-    background: url("imgs/low/candid.JPG") center;
+    background: url("https://res.cloudinary.com/abhishek25/image/upload/v1621010896/candid_sqjwv1.jpg") center;
     background-size: 100%;
     transition: background-size 300ms ease-out;
 }
 
 
 #serviceFive {
-    background: url("imgs/low/kids.JPG") center;
+    background: url("https://res.cloudinary.com/abhishek25/image/upload/v1621010896/kids_kichrf.jpg") center;
     background-size: 100%;
     transition: background-size 300ms ease-out;
 }
 
 #serviceSix {
-    background: url("imgs/low/maternity.JPG") center;
+    background: url("https://res.cloudinary.com/abhishek25/image/upload/v1621010896/maternity_hatoba.jpg") center;
     background-size: 100%;
     transition: background-size 300ms ease-out;
 }
