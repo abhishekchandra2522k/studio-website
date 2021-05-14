@@ -1039,7 +1039,38 @@ input[type=text], input[type=tel], input[type=email], input[type=date], select, 
     }
   }
   
+.services_text{
+    text-align: center;
+    display: grid;
+    padding: 0 !important;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 60%;
+    column-gap: 2rem;
+    margin-top: 1rem;
+}
 
+@media screen and (max-width: 1441px){
+    .services_text{
+        width: 81%;
+    }
+}
+
+
+@media screen and (min-width: 2000px){
+    .services_text{
+        width: 45%;
+    }
+}
+
+.none2{
+    text-transform: none;
+    color: rgba(0, 0, 0, 0.384) !important;
+    font-size: 12px;
+    margin: 1rem 0;
+}
 /************************************
             RESPONSIVE
 ************************************/
@@ -1106,7 +1137,7 @@ header{
     }
     #services p{
         font-weight: bold;
-        color: rgba(0, 0, 0, 0.637);
+        color: rgba(0, 0, 0, 0.842);
     }
 
     .serviceBox {
