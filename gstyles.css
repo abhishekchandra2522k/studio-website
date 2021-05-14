@@ -200,38 +200,38 @@ body {
 
 
 #serviceOne {
-    background: url("imgs/pre\ wedding.jpg") center;
+    background: url("imgs/low/pre.JPG") center;
     background-size: 100%;
     transition: background-size 300ms ease-out;
 }
 
 
 #serviceTwo {
-    background: url("imgs/wedding.jpg") center;
+    background: url("imgs/low/wedd.JPG") center;
     background-size: 100%;
     transition: background-size 300ms ease-out;
 }
 
 #serviceThree {
-    background: url("imgs/bridal.jpg") center;
+    background: url("imgs/low/bridal\ copy.JPG") center;
     background-size: 100%;
     transition: background-size 300ms ease-out;
 }
 #serviceFour {
-    background: url("imgs/candid.jpg") center;
+    background: url("imgs/low/candid.JPG") center;
     background-size: 100%;
     transition: background-size 300ms ease-out;
 }
 
 
 #serviceFive {
-    background: url("imgs/kids\ shoot.jpg") center;
+    background: url("imgs/low/kids.JPG") center;
     background-size: 100%;
     transition: background-size 300ms ease-out;
 }
 
 #serviceSix {
-    background: url("imgs/maternity.jpg") center;
+    background: url("imgs/low/maternity.JPG") center;
     background-size: 100%;
     transition: background-size 300ms ease-out;
 }
