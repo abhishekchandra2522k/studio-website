@@ -525,7 +525,7 @@ body {
 }
 
 .parallaxTwo {
-    background: url("bw.jpg") center;
+    background: url("imgs/bw.jpg") center;
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
