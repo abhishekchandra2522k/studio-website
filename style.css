@@ -63,9 +63,9 @@ li {
 
 header {
     width: 100%;
-    height: 100vh;
+    height: 106vh;
     overflow: hidden;
-    transition-delay: 500ms;
+    /* transition-delay: 500ms; */
     z-index: 11;
 }
 
