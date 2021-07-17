@@ -516,7 +516,7 @@ body {
 }
 
 .parallaxOne {
-    background: url("imgs/Untitled-3\ copy.JPG") center;
+    background: url("https://res.cloudinary.com/abhishek25/image/upload/v1626515389/Untitled-3_copy_dvnchq.jpg") center;
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
@@ -525,7 +525,7 @@ body {
 }
 
 .parallaxTwo {
-    background: url("imgs/bw.jpg") center;
+    background: url("https://res.cloudinary.com/abhishek25/image/upload/v1626515784/bw_wfcwpz.jpg") center;
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
