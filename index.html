@@ -1,385 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta  name="simpledcver"  content="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkb21haW4iOiJuYWp1a3N0dWRpby5pbiIsImV4cCI6MTYyMTU1NTIwMH0.py7O9kNHIUjZu_h37wEL-2RFyAPCr70675aW7L1GouU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="simpledcver"
+      content="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkb21haW4iOiJuYWp1a3N0dWRpby5pbiIsImV4cCI6MTYyMTU1NTIwMH0.py7O9kNHIUjZu_h37wEL-2RFyAPCr70675aW7L1GouU"
+    />
     <title>Najuk Studios</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="icon" href="https://res.cloudinary.com/abhishek25/image/upload/v1621011723/nj_vzpbc2.png" />
-    <link rel="stylesheet" href="owl.carousel.css">
-    <link rel="stylesheet" href="owl.theme.default.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>  
-  
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/abhishek25/image/upload/v1621011723/nj_vzpbc2.png"
+    />
+    <link rel="stylesheet" href="owl.carousel.css" />
+    <link rel="stylesheet" href="owl.theme.default.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+  </head>
 
-    <header>
-        <video autoplay loop muted playsinline style="pointer-events: none;">
-            <source src="imgs/header.mp4" type="video/mp4">
-        </video>
-        <div class="header">
-            <input type="checkbox" id="toggleMenu" hidden>
-            <label for="toggleMenu">
-                Menu
-            </label>
-                <img src="imgs/logo.png" alt="" width="200px" onclick="window.location.href ='/'">
-            <nav>
-
-                <div class="fullMenu menu">
-                    <ul class="new_nav">
-                        <div class="center" style="float: left;">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="gallery.html">Portfolio</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </div>
-                        <div class="social_right" style="float: right;">
-                            <li><a href="https://www.facebook.com/najukstudio"><i class="fab fa-facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com/najukstudio/"><i class="fab fa-instagram"></i></a></li>                        </div>
-                    </ul>
-                </div>
-
-                <div class="menu" id="collMenu">
-                    <ul>            
-                        <li><a href="#">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="gallery.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-            </nav>
+  <header>
+    <video autoplay loop muted playsinline style="pointer-events: none">
+      <source src="imgs/header.mp4" type="video/mp4" />
+    </video>
+    <div class="header">
+      <input type="checkbox" id="toggleMenu" hidden />
+      <label for="toggleMenu"> Menu </label>
+      <img
+        src="imgs/logo.png"
+        alt=""
+        width="200px"
+        onclick="window.location.href ='/'"
+      />
+      <nav>
+        <div class="fullMenu menu">
+          <ul class="new_nav">
+            <div class="center" style="float: left">
+              <li><a href="#">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="gallery.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </div>
+            <div class="social_right" style="float: right">
+              <li>
+                <a href="https://www.facebook.com/najukstudio"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/najukstudio/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </div>
+          </ul>
         </div>
-    </header>
 
-<body>
-    <br>
+        <div class="menu" id="collMenu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <body>
+    <br />
     <section>
-        <div class="title">
-            <p>Najuk Studios is an endeavor to capture all things beautiful. We are a passionate team of wedding photographers and cinematographers who love to capture and preserve the most beautiful of emotions experienced around. We believe that weddings are a path-defining phase of an individual’s life; the flood of emotions and beautiful memories that a wedding creates is rare, truly overwhelming, and heartwarming. Hence, weddings serve as a perfect platform for us to satiate our creative juices and allow us a cathartic experience.</p>
-        </div>
+      <div class="title">
+        <p>
+          Najuk Studios is an endeavor to capture all things beautiful. We are a
+          passionate team of wedding photographers and cinematographers who love
+          to capture and preserve the most beautiful of emotions experienced
+          around. We believe that weddings are a path-defining phase of an
+          individual’s life; the flood of emotions and beautiful memories that a
+          wedding creates is rare, truly overwhelming, and heartwarming. Hence,
+          weddings serve as a perfect platform for us to satiate our creative
+          juices and allow us a cathartic experience.
+        </p>
+      </div>
     </section>
-        
-        
+
     <section class="gallery-home">
-        <figure class="gallery__item gallery__item--1">
-            <img src="https://res.cloudinary.com/abhishek25/image/upload/v1621011527/1_copy_ybwrmz.jpg" class="gallery__img" alt="Image 1">
-        </figure>
-        <figure class="gallery__item gallery__item--2">
-            <img src="https://res.cloudinary.com/abhishek25/image/upload/v1621011508/11_noj6pm.jpg" class="gallery__img" alt="Image 2">
-        </figure>
-        <figure class="gallery__item gallery__item--3">
-            <img src="https://res.cloudinary.com/abhishek25/image/upload/v1621011507/g9_ok5ojl.jpg" class="gallery__img" alt="Image 3">
-        </figure>
-        <figure class="gallery__item gallery__item--4">
-            <img src="https://res.cloudinary.com/abhishek25/image/upload/v1621011508/14_nbrlji.jpg" class="gallery__img" alt="Image 4">
-        </figure>
-        <figure class="gallery__item gallery__item--5">
-            <img src="https://res.cloudinary.com/dnlphduvb/image/upload/v1621011385/19_nt9jx5.jpg" class="gallery__img" alt="Image 5">
-        </figure>
-        <figure class="gallery__item gallery__item--6">
-            <img src="https://res.cloudinary.com/dnlphduvb/image/upload/v1621011385/16_istf6h.jpg" class="gallery__img" alt="Image 6">
-        </figure>
-        <figure class="gallery__item gallery__item--7">
-            <img src="https://res.cloudinary.com/dnlphduvb/image/upload/v1621011389/17_udaols.jpg" class="gallery__img" alt="Image 7">
-        </figure>
-        <figure class="gallery__item gallery__item--8">
-            <img src="https://res.cloudinary.com/dnlphduvb/image/upload/v1621011385/15_p7p6sb.jpg" class="gallery__img" alt="Image 8">
-        </figure>
-        <figure class="gallery__item gallery__item--9">
-            <img src="https://res.cloudinary.com/dnlphduvb/image/upload/v1621011386/18_raqwyt.jpg" class="gallery__img" alt="Image 9">
-        </figure>
+      <figure class="gallery__item gallery__item--1">
+        <img
+          src="https://res.cloudinary.com/abhishek25/image/upload/v1621011527/1_copy_ybwrmz.jpg"
+          class="gallery__img"
+          alt="Image 1"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--2">
+        <img
+          src="https://res.cloudinary.com/abhishek25/image/upload/v1621011508/11_noj6pm.jpg"
+          class="gallery__img"
+          alt="Image 2"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--3">
+        <img
+          src="https://res.cloudinary.com/abhishek25/image/upload/v1621011507/g9_ok5ojl.jpg"
+          class="gallery__img"
+          alt="Image 3"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--4">
+        <img
+          src="https://res.cloudinary.com/abhishek25/image/upload/v1621011508/14_nbrlji.jpg"
+          class="gallery__img"
+          alt="Image 4"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--5">
+        <img
+          src="https://res.cloudinary.com/dnlphduvb/image/upload/v1621011385/19_nt9jx5.jpg"
+          class="gallery__img"
+          alt="Image 5"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--6">
+        <img
+          src="https://res.cloudinary.com/dnlphduvb/image/upload/v1621011385/16_istf6h.jpg"
+          class="gallery__img"
+          alt="Image 6"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--7">
+        <img
+          src="https://res.cloudinary.com/dnlphduvb/image/upload/v1621011389/17_udaols.jpg"
+          class="gallery__img"
+          alt="Image 7"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--8">
+        <img
+          src="https://res.cloudinary.com/dnlphduvb/image/upload/v1621011385/15_p7p6sb.jpg"
+          class="gallery__img"
+          alt="Image 8"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item--9">
+        <img
+          src="https://res.cloudinary.com/dnlphduvb/image/upload/v1621011386/18_raqwyt.jpg"
+          class="gallery__img"
+          alt="Image 9"
+        />
+      </figure>
     </section>
 
-    <section style="padding: 0;margin-bottom: -11px; margin-top: -11px;" class="home_text_img">
-        <img src="header/embrace.jpg" alt="">
+    <section
+      style="padding: 0; margin-bottom: -11px; margin-top: -11px"
+      class="home_text_img"
+    >
+      <img src="header/embrace.jpg" alt="" />
     </section>
     <section>
-        <div class="blog w3-section" id="blog">
-            <img class="mySlides w3-animate-fading" src="imgs/6.JPG" alt="">
-            <img class="mySlides w3-animate-fading" src="https://res.cloudinary.com/abhishek25/image/upload/v1620987386/cover_1_kt3bz7.jpg" alt="">
-            <img class="mySlides w3-animate-fading" src="https://res.cloudinary.com/abhishek25/image/upload/v1620987385/cover_2_bdb8w9.jpg" alt="">
-            <img class="mySlides w3-animate-fading" src="https://res.cloudinary.com/abhishek25/image/upload/v1620987384/cover_3_we9sak.jpg" alt="">
-            <img class="mySlides w3-animate-fading" src="https://res.cloudinary.com/abhishek25/image/upload/v1620987385/cover_4_xxkbry.jpg" alt="">
-        </div>
+      <div class="blog w3-section" id="blog">
+        <img class="mySlides w3-animate-fading" src="imgs/6.JPG" alt="" />
+        <img
+          class="mySlides w3-animate-fading"
+          src="https://res.cloudinary.com/abhishek25/image/upload/v1620987386/cover_1_kt3bz7.jpg"
+          alt=""
+        />
+        <img
+          class="mySlides w3-animate-fading"
+          src="https://res.cloudinary.com/abhishek25/image/upload/v1620987385/cover_2_bdb8w9.jpg"
+          alt=""
+        />
+        <img
+          class="mySlides w3-animate-fading"
+          src="https://res.cloudinary.com/abhishek25/image/upload/v1620987384/cover_3_we9sak.jpg"
+          alt=""
+        />
+        <img
+          class="mySlides w3-animate-fading"
+          src="https://res.cloudinary.com/abhishek25/image/upload/v1620987385/cover_4_xxkbry.jpg"
+          alt=""
+        />
+      </div>
     </section>
-    <br><br>
+    <br /><br />
 
-    <section style="padding: 0;margin-bottom: -4rem;" class="home_text_img2">
-        <img src="header/wedding.jpg" alt="">
+    <section style="padding: 0; margin-bottom: -4rem" class="home_text_img2">
+      <img src="header/wedding.jpg" alt="" />
     </section>
 
     <section class="gallery-home_2">
-        <figure class="gallery__item gallery__item-1">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/PW3mlpdputc" class="gallery__img" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <figure class="gallery__item gallery__item-1">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/PW3mlpdputc"
+          class="gallery__img"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <!-- <img src="https://res.cloudinary.com/abhishek25/image/upload/v1620988477/1_llor92.jpg"  alt="Image 1"> -->
-        </figure>
-        <figure class="gallery__item gallery__item-2">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8oxtXh0K5zI" class="gallery__img" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </figure>
+      <figure class="gallery__item gallery__item-2">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/8oxtXh0K5zI"
+          class="gallery__img"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <!-- <img src="https://res.cloudinary.com/abhishek25/image/upload/v1620988471/2_jahvrd.jpg"  alt="Image 2"> -->
-        </figure>
-        <figure class="gallery__item gallery__item-3">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3qSUQchdTX8" class="gallery__img" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </figure>
+      <figure class="gallery__item gallery__item-3">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/3qSUQchdTX8"
+          class="gallery__img"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <!-- <img src="https://res.cloudinary.com/abhishek25/image/upload/v1620988470/3_zjwh2y.jpg"  alt="Image 3"> -->
-        </figure>
-        <figure class="gallery__item gallery__item-4">
-        <img src="https://res.cloudinary.com/abhishek25/image/upload/v1620988471/4_z52bs2.jpg" class="gallery__img" alt="Image 4">
-        </figure>
-        <figure class="gallery__item gallery__item-5">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZoyJ2hXwx1Y" class="gallery__img" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </figure>
+      <figure class="gallery__item gallery__item-4">
+        <img
+          src="https://res.cloudinary.com/abhishek25/image/upload/v1620988471/4_z52bs2.jpg"
+          class="gallery__img"
+          alt="Image 4"
+        />
+      </figure>
+      <figure class="gallery__item gallery__item-5">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ZoyJ2hXwx1Y"
+          class="gallery__img"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <!-- <img src="https://res.cloudinary.com/abhishek25/image/upload/v1620988470/5_mtiifa.jpg"  alt="Image 5"> -->
-        </figure>
-        <figure class="gallery__item gallery__item-6">
-        <img src="https://res.cloudinary.com/abhishek25/image/upload/v1620988470/6_tznuvd.jpg" class="gallery__img" alt="Image 6">
-        </figure>
+      </figure>
+      <figure class="gallery__item gallery__item-6">
+        <img
+          src="https://res.cloudinary.com/abhishek25/image/upload/v1620988470/6_tznuvd.jpg"
+          class="gallery__img"
+          alt="Image 6"
+        />
+      </figure>
     </section>
 
     <div class="parallaxOne"></div>
 
-    <div style="background-color: #aec6cf; padding: 1rem 0;">
-        <h1 style="text-align: center; color: #ffffff; font-size: 50px; font-weight: bold;">Testimonials</h1>
+    <div style="background-color: #aec6cf; padding: 1rem 0">
+      <h1
+        style="
+          text-align: center;
+          color: #ffffff;
+          font-size: 50px;
+          font-weight: bold;
+        "
+      >
+        Testimonials
+      </h1>
     </div>
     <section>
-        <div class="testimonials" id="testimonials">
-            <div class="container">
-                <div class="owl-carousel owl-theme">
-                    <div class="testimonials-box item">
-                        <h3>Nikunj Patel</h3>
-                        <p>"Good Experience with the studio. I really like my baby shoot. Yes, I recommend to Najuk Studio and very helpful staff. I love my baby pictures."</p>
-                    </div>
-                    <div class="testimonials-box item">
-                        <h3>Tanujaa Chandna</h3>
-                        <p>"Always try to provide maximum satisfaction to their customers. The BEST STUDIO."</p>
-                    </div>
-                    <div class="testimonials-box item">
-                        <h3>Naman Mehrotra</h3>
-                        <p>"Professional photographer services with team of energetic individuals.  Get you quote as per your schedule"</p>
-                    </div>
-                    <div class="testimonials-box item">
-                        <h3>Ashish Aswal</h3>
-                        <p>"The best Studio... Of Rajasthan... Guyzz just check it out. Once..."</p>
-                    </div>
-                </div>
+      <div class="testimonials" id="testimonials">
+        <div class="container">
+          <div class="owl-carousel owl-theme">
+            <div class="testimonials-box item">
+              <h3>Nikunj Patel</h3>
+              <p>
+                "Good Experience with the studio. I really like my baby shoot.
+                Yes, I recommend to Najuk Studio and very helpful staff. I love
+                my baby pictures."
+              </p>
             </div>
-        </div>  
-    </section>   
-    <br><br>
+            <div class="testimonials-box item">
+              <h3>Tanujaa Chandna</h3>
+              <p>
+                "Always try to provide maximum satisfaction to their customers.
+                The BEST STUDIO."
+              </p>
+            </div>
+            <div class="testimonials-box item">
+              <h3>Naman Mehrotra</h3>
+              <p>
+                "Professional photographer services with team of energetic
+                individuals. Get you quote as per your schedule"
+              </p>
+            </div>
+            <div class="testimonials-box item">
+              <h3>Ashish Aswal</h3>
+              <p>
+                "The best Studio... Of Rajasthan... Guyzz just check it out.
+                Once..."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br />
 
     <!-- INSTAGRAM FEED SLIDER -->
-    <div style="background-color: #aec6cf; padding: 2rem 0;">    
-        <h1 style="text-align: center; text-transform: none; color: #ffffff;">From The GRAM</h1>
+    <div style="background-color: #aec6cf; padding: 2rem 0">
+      <h1 style="text-align: center; text-transform: none; color: #ffffff">
+        From The GRAM
+      </h1>
     </div>
-    <br>
-    <h6 style="text-align: center; color: slategray;">Follow along <a href="https://www.instagram.com/najukstudio/" target="_blank">@najukstudio</a></h6>
-    <br>
-    
-    <div id="instafeed-container"></div>      
-    <br><br>
+    <br />
+    <h6 style="text-align: center; color: slategray">
+      Follow along
+      <a href="https://www.instagram.com/najukstudio/" target="_blank"
+        >@najukstudio</a
+      >
+    </h6>
+    <br />
+
+    <div id="instafeed-container"></div>
+    <br /><br />
 
     <div class="parallaxTwo"></div>
-    
-    
+
     <section>
-        <div class="container_form">
-            <h1 style="text-align: center;">Contact Us</h1>
-            <br>
-            <br><br>
-            <form action="https://formspree.io/f/mrgrppjb" method="POST" id="my-form">
-              <label for="fname">Name*</label>
-              <input type="text" id="fname" name="Name" placeholder="Name.." required>
-          
-              <label for="lname">Email*</label>
-              <input type="email" id="lname" name="Email" placeholder="Email" required>
-                
-              <label for="number">Contact Number*</label><br>
-              <input type="tel" name="number" id="number" placeholder="" required><br><br>
-              <label for="date">Date of Wedding</label>
-              <input type="date" name="date" required>
-              <label for="subject">Tell us about your wedding plan</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
-              <div style="text-align: center;"><input type="submit" value="SUBMIT"></div>
-              
-            </form><br><br>
-            <div><span id="status"></span></div>
-        </div>
+      <div class="container_form">
+        <h1 style="text-align: center">Contact Us</h1>
+        <br />
+        <br /><br />
+        <form
+          action="https://formspree.io/f/mrgrppjb"
+          method="POST"
+          id="my-form"
+        >
+          <label for="fname">Name*</label>
+          <input
+            type="text"
+            id="fname"
+            name="Name"
+            placeholder="Name.."
+            required
+          />
+
+          <label for="lname">Email*</label>
+          <input
+            type="email"
+            id="lname"
+            name="Email"
+            placeholder="Email"
+            required
+          />
+
+          <label for="number">Contact Number*</label><br />
+          <input
+            type="tel"
+            name="number"
+            id="number"
+            placeholder=""
+            required
+          /><br /><br />
+          <label for="date">Date of Wedding</label>
+          <input type="date" name="date" required />
+          <label for="subject">Tell us about your wedding plan</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+            required
+          ></textarea>
+          <div style="text-align: center">
+            <input type="submit" value="SUBMIT" />
+          </div>
+        </form>
+        <br /><br />
+        <div><span id="status"></span></div>
+      </div>
     </section>
-        
+
     <footer>
-        <div class="new_footer">
-            <div class="footer__social">
-                <a href="https://www.facebook.com/najukstudio"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/najukstudio/"><i class="fab fa-instagram"></i></a>
-                <a href="mailto:najukstudio@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div><br>
-            <div class="footer__info">
-                <p class="laptop">NAJUK STUDIO PHOTOGRAPHY &emsp;  Raja Park, Jaipur, Rajasthan - 302004  &emsp; +91-97829-11284 &emsp; najukstudio@gmail.com</p>
-                <p class="none"><span style="font-weight: bold; opacity: 0.8;">NAJUK STUDIO PHOTOGRAPHY </span>&nbsp;JAIPUR, <br>  Rajasthan - 302004 <br> +91-97829-11284 <br> najukstudio@gmail.com</p>
-            </div><br>
-            <div class="creator footer__info">
-                <p class="laptop">Creatively Crafted by <a style="color: #ccb532cb; text-decoration: none; font-weight: bold;" target="_blank" href="https://unsocials.social">Unsocials</a></p>
-            </div>
+      <div class="new_footer">
+        <div class="footer__social">
+          <a href="https://www.facebook.com/najukstudio"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/najukstudio/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="mailto:najukstudio@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
         </div>
+        <br />
+        <div class="footer__info">
+          <p class="laptop">
+            NAJUK STUDIO PHOTOGRAPHY &emsp; Raja Park, Jaipur, Rajasthan -
+            302004 &emsp; +91-97829-11284 &emsp; najukstudio@gmail.com
+          </p>
+          <p class="none">
+            <span style="font-weight: bold; opacity: 0.8"
+              >NAJUK STUDIO PHOTOGRAPHY </span
+            >&nbsp;JAIPUR, <br />
+            Rajasthan - 302004 <br />
+            +91-97829-11284 <br />
+            najukstudio@gmail.com
+          </p>
+        </div>
+        <br />
+        <div class="creator footer__info">
+          <p class="laptop">
+            Creatively Crafted by
+            <a
+              style="color: #ccb532cb; text-decoration: none; font-weight: bold"
+              target="_blank"
+              href="https://unsocials.social"
+              >Unsocials</a
+            >
+          </p>
+        </div>
+      </div>
     </footer>
 
-    
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="jquery.min.js"></script>
     <script src="owl.carousel.js"></script>
     <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            nav: true,
-            autoplayHoverPause:true,
-            responsive:{
-                0:{
-                    items: 1
-                }
-            }
-        })
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        nav: true,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+        },
+      })
     </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
-        <script>
-            function getIp(callback) {
-                fetch('https://ipinfo.io/json?token=c185a845b02185', { headers: { 'Accept': 'application/json' }})
-                .then((resp) => resp.json())
-                .catch(() => {
-                    return {
-                    country: 'in',
-                    };
-                })
-                .then((resp) => callback(resp.country));
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script>
+      function getIp(callback) {
+        fetch('https://ipinfo.io/json?token=c185a845b02185', {
+          headers: { Accept: 'application/json' },
+        })
+          .then((resp) => resp.json())
+          .catch(() => {
+            return {
+              country: 'in',
             }
-            const phoneInputField = document.querySelector("#number");
-            const phoneInput = window.intlTelInput(phoneInputField, {
-                preferredCountries: ["us","in"],
-                initialCountry: "auto",
-                geoIpLookup: getIp,
-                utilsScript:
-                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-            });
-        </script>
-        <script>
-            var form = document.getElementById("my-form");
-            async function handleSubmit(event) {
-            event.preventDefault();
-            var status = document.getElementById("status");
-            var data = new FormData(event.target);
-            fetch(event.target.action, {
-                method: form.method,
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(response => {
-                status.classList.add('success');
-                status.innerHTML = "Thanks for your submission!";
-                // form.reset()
-            }).catch(error => {
-                status.classList.add('success');
-                status.innerHTML = "Oops! There was a problem submitting your form";
-                // form.reset()
-            });
-            }
-            form.addEventListener("submit", handleSubmit)
-        </script>
+          })
+          .then((resp) => callback(resp.country))
+      }
+      const phoneInputField = document.querySelector('#number')
+      const phoneInput = window.intlTelInput(phoneInputField, {
+        preferredCountries: ['us', 'in'],
+        initialCountry: 'auto',
+        geoIpLookup: getIp,
+        utilsScript:
+          'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js',
+      })
+    </script>
+    <script>
+      var form = document.getElementById('my-form')
+      async function handleSubmit(event) {
+        event.preventDefault()
+        var status = document.getElementById('status')
+        var data = new FormData(event.target)
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: 'application/json',
+          },
+        })
+          .then((response) => {
+            status.classList.add('success')
+            status.innerHTML = 'Thanks for your submission!'
+            // form.reset()
+          })
+          .catch((error) => {
+            status.classList.add('success')
+            status.innerHTML = 'Oops! There was a problem submitting your form'
+            // form.reset()
+          })
+      }
+      form.addEventListener('submit', handleSubmit)
+    </script>
 
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
-        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+    <script type="text/javascript">
+      var userFeed = new Instafeed({
+        get: 'user',
+        target: 'instafeed-container',
+        resolution: 'low_resolution',
+        accessToken:
+          'IGQVJWWGMteGtKYU1Wcm00anozZAzcwTUU1anBHdDBuRHQwY1JvOFVObVVwZAXZAlcHNmaFgzVGp5ekR6NUNMazVFSi1ITVh3WGdXQW9Ua2JCNENZAbTlhMGEtNjBxQkhHVXVNa0xScExVU1FHbzZADYUc0OAZDZD',
+      })
+      userFeed.run()
+    </script>
 
-        <script type="text/javascript">
-            var userFeed = new Instafeed({
-                get: 'user',
-                target: "instafeed-container",
-                resolution: 'low_resolution',
-                accessToken: 'IGQVJYYk9SeFVsTGx2dkhTcEdFdUZAsc1k4eWFHMnhMckpOVTBTWXFEeF9RYnFYYXpOaEFYUkoyNXVxWUx6ZAXlyQVEzVlZAxdUxXaC1OajNiLXNUdlF6SEtlX1l1UkxTbm1SRHkxeXIxV0ktVkI1WXloYwZDZD'
-            });
-            userFeed.run();
-        </script>
+    <script>
+      var slide = document.getElementById('instafeed-container')
+      var x = slide.getElementsByTagName('A')
+      // console.log(x);
+      // console.log(x.item(1));
+      var i
+      // console.log(x.length);
 
-        <script>
-            var slide = document.getElementById('instafeed-container');
-            var x = slide.getElementsByTagName('A');
-            // console.log(x);
-            // console.log(x.item(1));
-            var i;
-            // console.log(x.length);
+      function slick() {
+        $(document).ready(function () {
+          $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: false,
+            dots: false,
+            pauseOnHover: true,
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 3,
+                },
+              },
+              {
+                breakpoint: 520,
+                settings: {
+                  slidesToShow: 2,
+                },
+              },
+            ],
+          })
+        })
+      }
+      function pollDOM() {
+        if (x.length) {
+          for (i = 0; i < x.length - 1; i++) {
+            // console.log(x.item(i).outerHTML);
+            // x.item(i).classList.add('swiper-slide');
+            var p = x.item(i).parentNode
+            var w = document.createElement('div')
+            w.classList.add('slide')
+            p.replaceChild(w, x.item(i))
+            // console.log(w);
+            w.appendChild(x.item(i))
+            // console.log(w);
+          }
+          slide.classList.add('customer-logos')
+          slide.classList.add('slide')
+          slick()
+        } else {
+          setTimeout(pollDOM, 300)
+        }
+      }
 
-            function slick(){
-                $(document).ready(function(){
-                    $('.customer-logos').slick({
-                        slidesToShow: 6,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 3000,
-                        arrows: false,
-                        dots: false,
-                        pauseOnHover: true,
-                        responsive: [
-                            {
-                                breakpoint: 768,
-                                settings: {
-                                    slidesToShow: 3
-                                }
-                            },
-                            {
-                                breakpoint: 520,
-                                settings: {
-                                    slidesToShow: 2
-                                }
-                            }
-                        ]
-                    })
-                });
-            }
-            function pollDOM () {
+      pollDOM()
+    </script>
 
-                if (x.length) {
-                    for(i = 0; i < x.length-1; i++){
-                                // console.log(x.item(i).outerHTML);
-                                // x.item(i).classList.add('swiper-slide');
-                                var p = x.item(i).parentNode;
-                                var w = document.createElement('div');
-                                w.classList.add('slide');
-                                p.replaceChild(w,x.item(i));
-                                // console.log(w);
-                                w.appendChild(x.item(i));
-                                // console.log(w);
-                            }
-                        slide.classList.add('customer-logos');
-                        slide.classList.add('slide');
-                        slick();
-                } else {
-                    setTimeout(pollDOM, 300);
-                }
-                }
-
-            pollDOM();
-        </script>
-
-        <script>
-
-        </script>
-        <style>
-            .slick-slide{
-                margin: 0px 1px;
-            }
-            .slick-slide img{
-                width: 100%;
-            }
-        </style>
-</body>
+    <script></script>
+    <style>
+      .slick-slide {
+        margin: 0px 1px;
+      }
+      .slick-slide img {
+        width: 100%;
+      }
+    </style>
+  </body>
 </html>
